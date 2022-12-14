@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="register-div">
+        <form id="register-form">
+            <h2>Create Account</h2>
+            <label for="">Firstname*</label>
+            <input type="text" placeholder="Firstname" required id="firstname">
+            <label for="">Lastname*</label>
+            <input type="text" placeholder="Lastname" required id="lastname">
+            <label for="">Email Address*</label>
+            <input type="email" placeholder="Email" required id="email">
+            <label for="">Phone*</label>
+            <input type="tel" placeholder="Phone" minlength="10" id="phone">
+            <label for="">Create Password*</label>
+            <input type="password" placeholder="Password" name="" id="password">
+            <label for="">Confirm Password*</label>
+            <input type="password" placeholder="Confirm Password" name="" id="confirm-password">
+            <input type="submit" value="Create Account">
+        </form>
+        </div>
+        <div id="login-div">
+            <form id="login-form">
+            <h2>Sign In</h2>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" name="" id="password">
+            <input type="submit" value="Sign In">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="register.js"></script>
