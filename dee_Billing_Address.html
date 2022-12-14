@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dee_Billing_Address</title>
+  </head>
+  <style>
+    /* css for the logo  */
+    .dee_logo {
+      margin: auto;
+      margin-top: 4vh;
+      margin-bottom: 2vh;
+      text-align: center;
+    }
+    .dee_logo img {
+      height: 14vh;
+    }
+    /* ================================== */
+    /* border css */
+    #dee_border {
+      width: 95%;
+      margin: auto;
+      border: 1px solid rgb(163, 152, 152);
+    }
+    /*display flex property for fedex part  */
+    #dee_checkout_container {
+      width: 95%;
+      margin-bottom: 30px;
+    }
+    #dee_fedex {
+      display: flex;
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    /* fedex logog  */
+    #dee_fedex_logo {
+      width: 100%;
+      margin: auto;
+    }
+    #dee_fedex_logo img {
+      width: 24%;
+      height: 8vh;
+    }
+    /* dee_billing_shipping address part */
+    .dee_billing_shipping {
+      /* border: 2px solid yellow; */
+      /* height: 65vh; */
+      font-size: 15px;
+    }
+
+    .dee_billing_shipping{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 5%;
+        justify-content: space-around;
+    }
+    .dee_billing_shipping>div{
+      border: 2px solid rgb(209, 200, 200);
+    }
+    .dee_billing_shipping input{
+        width: 245px;
+        padding: 3px;
+    }
+    .dee_billing_shipping label{
+        padding-right: 30px;
+    }
+    #dee_billstyle {
+        display: block;
+        padding-top: 3px ;
+        padding-bottom: 3px ;
+        margin-bottom: 10px;
+        font-size: larger;
+        background-color: rgb(230, 209, 171);
+    }
+    /* countries input styling  */
+    #dee_country{
+        width: 100%;
+    }
+    #dee_address_line_para{
+      width: 245px;
+      font-size: small;
+    }
+    /* =====Billing part */
+      /* order summary part css */
+      #dee_card_img img{
+        width: 100%;
+        height: 60vh;
+     }
+    .dee_Summary_card{
+        text-align: center;
+        width: 55%;
+        height: 120vh;
+        margin: auto;
+        border: 5px solid rgb(219, 191, 191);
+        border-radius: 10px;
+    }
+    /* .dee_div_btn >div {
+     display: grid;
+     grid-template-columns: repeat(1,1rf);
+    } */
+    .btn  {
+width: 25%;
+background-color: #776cf1;
+font-size: 27px;
+letter-spacing: 0.023em;
+font-style: normal;
+margin: auto;
+color: white;
+border-radius: 5px;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding: 10px;
+    }
+
+.btncancel  {
+width: 15%;
+background-color: #c0c0c5;
+font-size: 27px;
+letter-spacing: 0.023em;
+font-style: normal;
+margin: auto;
+margin-top: 10px;
+color: white;
+border-radius: 5px;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding: 10px;
+    }
+
+    /* this is for  payment summary part */
+        #dee_card_img img{
+        width: 100%;
+        height: 60vh;
+     }
+    .dee_Summary_card{
+        text-align: center;
+        width: 55%;
+        height: 120vh;
+        margin: auto;
+        border: 5px solid rgb(219, 191, 191);
+        border-radius: 10px;
+    }
+    /* .dee_div_btn >div {
+     display: grid;
+     grid-template-columns: repeat(1,1rf);
+    } */
+    .btn  {
+width: 25%;
+background-color: #776cf1;
+font-size: 27px;
+letter-spacing: 0.023em;
+font-style: normal;
+margin: auto;
+color: white;
+border-radius: 5px;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding: 10px;
+    }
+
+.btncancel  {
+width: 15%;
+background-color: #c0c0c5;
+font-size: 27px;
+letter-spacing: 0.023em;
+font-style: normal;
+margin: auto;
+margin-top: 10px;
+color: white;
+border-radius: 5px;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding: 10px;
+    }
+    #dee_summary_details{
+        text-align: left;
+        padding-left: 77px;
+    }
+ 
+    .btn:hover{
+    animation: animate 1s linear infinite;
+ }
+ @keyframes animate {
+    100% {
+        filter:hue-rotate(360deg);
+    }
+ }
+
+  </style>
+  <body>
+    <!-- <h1>hi everyone</h1> -->
+    <!-- logo part -->
+    <div class="dee_logo">
+      <img src="furniturefinallogo.png" alt="logo" />
+    </div>
+
+    <!-- border part -->
+    <div id="dee_border"></div>
+
+    <!-- DEEPAK CHECKOUT CONTAINER -->
+    <div class="dee_checkout_container">
+      <div id="dee_fedex">
+        <div id="dee_fedex_logo">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/20170922_fedexLogo.png"
+            alt=""
+          />
+        </div>
+        <p>
+          <b
+            >Secure checkout provided by FedEx International. Your order total
+            includes customs and taxes, if applicable.</b
+          >
+        </p>
+      </div>
+    </div>
+    <!-- billing address part  -->
+    <div class="dee_billing_shipping">
+      <div id="dee_billing_part">
+        <!-- billing code here -->
+        <b id="dee_billstyle">Billing Address</b>
+
+        <table>
+          <form action="">
+            <tr>
+              <td>
+                <label for="dee_email"><b>Email</b></label>
+              </td>
+              <td>
+                <input type="email" id="dee_email" name="dee_email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_fname"><b>First Name</b></label>
+              </td>
+              <td>
+                <input type="text" id="dee_fname" name="fname" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_lname"><b>Last Name</b></label>
+              </td>
+              <td>
+                <input type="text" id="dee_lname" name="lname" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_company">Company</label>
+              </td>
+              <td>
+                <input type="text" id="dee_company" name="dee_company" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_taxID">Tax ID</label>
+              </td>
+              <td>
+                <input type="text" id="dee_taxID" name="dee_taxID" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_Address1"><b>Address Line 1</b></label>
+              </td>
+              <td>
+                <input type="text" id="dee_Address1" name="dee_Address1" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_Address2">Address Line 2</label>
+              </td>
+              <td>
+                <input type="text" id="dee_Address2" name="dee_Address2" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_country"><b>Country</b></label>
+              </td>
+              <td>
+                <!-- <input type="text" id="dee_country" name="dee_country" /> -->
+                <select name="countries" id="dee_country">
+                    <option value="IND">India</option>
+                    <option value="RS">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="GR">Germanny</option>
+                    <option value="FR">France</option>
+                    <option value="UK">UK</option>
+                    <option value="JP">Japan</option>
+                    <option value="IT">Italy</option>
+                    <option value="CH">China</option>
+                    <option value="INDo">Indonesia</option>
+                    <option value="SA">South Africa</option>
+                    <option value="CA">Canada</option>
+                    <option value="IR">Ireland</option>
+
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_city"><b>City</b></label>
+              </td>
+              <td>
+                <input type="text" id="dee_city" name="dee_city" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_state">State </label>
+              </td>
+              <td>
+                <input type="text" id="dee_state" name="dee_state" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_ZIP">ZIP Code </label>
+              </td>
+              <td>
+                <input type="text" id="dee_ZIP" name="dee_ZIP" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_Phone"><b>#Phone</b> </label>
+              </td>
+              <td>
+                <input type="text" id="dee_Phone" name="dee_Phone" />
+              </td>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div id="dee_shipping_part">
+        <!-- here shipping address code  -->
+        <b id="dee_billstyle">Shipping Address</b>
+
+        <table>
+          <form action="">
+            <tr>
+              <td>
+                <label for="dee_email"><b>Email</b></label>
+              </td>
+              <td>
+                <input type="email" id="dee_email" name="dee_email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_fname"><b>First Name</b></label>
+              </td>
+              <td>
+                <input type="text" id="dee_fname" name="fname" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_lname"><b>Last Name</b></label>
+              </td>
+              <td>
+                <input type="text" id="dee_lname" name="lname" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_company">Company</label>
+              </td>
+              <td>
+                <input type="text" id="dee_company" name="dee_company" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_taxID">Tax ID</label>
+              </td>
+              <td>
+                <input type="text" id="dee_taxID" name="dee_taxID" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_Address1"><b>Address Line 1</b></label>
+              </td>
+              <td>
+                <input type="text" id="dee_Address1" name="dee_Address1" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_Address2">Address Line 2</label>
+              </td>
+              <td>
+                <input type="text" id="dee_Address2" name="dee_Address2" />
+                <p id="dee_address_line_para"> 	
+                  We cannot ship to PO box, APO or FPO addresses.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_country"><b>Country</b></label>
+              </td>
+              <td>
+                <!-- <input type="text" id="dee_country" name="dee_country" /> -->
+                <select name="countries" id="dee_country">
+                    <option value="IND">India</option>
+                    <option value="RS">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="GR">Germanny</option>
+                    <option value="FR">France</option>
+                    <option value="UK">UK</option>
+                    <option value="JP">Japan</option>
+                    <option value="IT">Italy</option>
+                    <option value="CH">China</option>
+                    <option value="INDo">Indonesia</option>
+                    <option value="SA">South Africa</option>
+                    <option value="CA">Canada</option>
+                    <option value="IR">Ireland</option>
+
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_city"><b>City</b></label>
+              </td>
+              <td>
+                <input type="text" id="dee_city" name="dee_city" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_state">State </label>
+              </td>
+              <td>
+                <input type="text" id="dee_state" name="dee_state" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_ZIP">ZIP Code </label>
+              </td>
+              <td>
+                <input type="text" id="dee_ZIP" name="dee_ZIP" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dee_Phone"><b>#Phone </b> </label>
+              </td>
+              <td>
+                <input type="text" id="dee_Phone" name="dee_Phone" />
+              </td>
+            </tr>
+          </form>
+        </table>
+      </div>
+    </div>
+    <!-- part -2 here -->
+    <div class="dee_Summary_card">
+      <div id="dee_card_img">
+          <img src="https://media.istockphoto.com/id/1252556057/vector/furniture-icons.jpg?s=1024x1024&w=is&k=20&c=CyFRZZQmZ1hDB32AXvJCLzgVyR1XzDciHu4T2qwHa1w=" alt="HERO">
+      </div>
+      <div class="dee_middle_order">
+          
+          <div id="dee_order_body">
+             <h1>Order Summary</h1>
+             <p>Make your life comfort with furniture stock buy any thing whatever you want</p>
+          </div>
+          <div id="dee_summary_details">
+              <h5>Total Amount 40000 </h5>
+              <h5>Shipping Charges</h5>
+              <h5> </h5>
+          </div>
+         <div class="dee_div_btn">
+           <div><a class="btn pay">Proceed to Payment</a></div>
+           <!-- <div><a   class="btncancel">Cancel Order</a></div> -->
+         </div>
+  
+      </div>
+      <!-- timing -->
+      <div class="dee_Summary_card">
+ 
+
+      </div>
+  </body>
+</html>
+<script>
+  let am = 890000;
+  let shipCharge = 10000
+  function order_Summary(am){
+  let container = document.querySelector('.dee_Summary_card');
+  return   container.innerHTML= ` 
+  <div id="dee_card_img">
+      <img src="https://media.istockphoto.com/id/1252556057/vector/furniture-icons.jpg?s=1024x1024&w=is&k=20&c=CyFRZZQmZ1hDB32AXvJCLzgVyR1XzDciHu4T2qwHa1w=" alt="HERO">
+  </div>
+  <div id="dee_order_body">
+     <h1>Order Summary</h1>
+     <p>Make your life comfort with furniture stock buy any thing whatever you want</p>
+  </div>
+  <div id="dee_summary_details">
+      <h3>Total Amount  ${ ':'+ `$`+' '+am} </h3>
+      <h3>Shipping Charges ${ ':'+ `$`+' '+shipCharge}</h3>
+      <h5> </h5>
+  </div>
+  <div class="dee_div_btn">
+       <div><a class="btn pay">Proceed to Payment</a></div>
+
+  
+     </div> 
+  `
+ }
+ order_Summary(am,shipCharge);
+</script>
