@@ -1,0 +1,334 @@
+.ndiv{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+
+}
+.banner{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* deals_product */
+
+
+#main_deals{
+    position: absolute;
+    top: 105vh;
+    text-align: center;
+}
+
+#deals{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+    width: 90%;
+    margin: 30px auto;
+ 
+
+}
+
+#deals div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: rgb(244, 241, 241);
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    position: relative;
+    top: -200px;
+    z-index: -1;
+   
+}
+#deals a{
+    height: 40vh;
+} 
+
+#deals div h4{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#deals img{
+    width: 100%;
+    border-radius: 10px 10px 0  0 ;
+}
+#deals img:hover{
+    opacity: 0.6;
+    width: 95%;
+    }
+
+#deals.offs{
+    position: relative;
+    top: 100px;
+}
+
+.delsanc{
+    position: relative;
+    left: -50px;
+
+}
+
+
+/* pro_catagory */
+
+
+#pro_catagory{
+    text-align: center;
+    /* position: relative; */
+    /* top: -80px !important; */
+    margin-top: 70vh !important;
+
+}
+
+#child_pro_cat{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+#child_pro_cat img{
+    width: 100%;
+}
+#child_pro_cat div{
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+
+
+#this_session{
+    text-align: center;
+    width: 90%;
+    margin: 5vh auto;
+}
+
+
+#child_Session{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 5vh;
+}
+
+#child_Session a{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 15px;
+    color: black !important;;
+}
+#child_Session a:hover{
+    opacity: 0.6;
+    text-decoration: none !important;
+}
+#child_Session img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+}
+/* Evroom */
+
+#EvRoom{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5vh;
+    /* position: relative;
+    bottom: 70vh; */
+}
+#child_Evroom{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 25px;
+margin-top: 35px;
+}
+#child_Evroom a{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.12) 0px 1px 2px;
+    color: black;
+    border-radius: 10px;
+
+}
+#child_Evroom img:hover{
+    opacity: 0.6;
+    width: 95%;
+}
+#child_Evroom img{
+    width: 100%;
+}
+
+#child_Session img:hover{
+    opacity: 0.6;
+    width: 97%;
+}
+
+/* brands */
+
+#brands{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+#childbrands{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#childbrands a{
+    background-color: rgb(246, 244, 244);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.12) 0px 1px 2px;
+    text-decoration: none !important;
+    color: black;
+    border-radius: 10px;
+}
+#childbrands img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+#childbrands a:hover{
+    width: 97%;
+    opacity: 0.6;
+}
+
+
+/* gotstyle */
+
+#gotstyle{
+    width: 95%;
+    margin:10vh auto;
+}
+
+#gotstyle h1{
+    text-align: center;
+    margin: 15px 0;
+}
+#childgots{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+#childgots a{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.12) 0px 1px 2px;
+    border-radius: 10px;
+    color: black !important;
+    text-decoration: none !important;;
+}
+
+
+#childgots img{
+    width: 100%;
+    border-radius: 10px 10px 0  0;
+
+}
+
+
+
+
+
+
+
+
+
+/* media_Query */
+
+
+
+@media all and (min-width:100px) and (max-width:550px){
+    #deals{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      
+    }
+
+    #main_deals{
+        position: relative;
+        top: 10px;
+    }
+    #pro_catagory{
+        position: relative;
+        top: -65vh;
+    }
+
+       #child_pro_cat{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);   
+        }
+
+        .next{
+            position: relative;
+            top: -57vh;
+        }
+
+        #EvRoom{
+            position: relative;
+            top: -55vh;
+        }
+
+        #child_Evroom{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        } 
+        #child_Session{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        #this_session{
+            margin-top: -45vh !important;
+        }
+        #childgots{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        #childbrands{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+}
+@media all and (min-width:551px) and (max-width:750px){
+    #deals{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+      
+    }
+    #main_deals{
+        position: relative;
+        top: 10px;
+    }
+
+    #pro_catagory{
+        position: relative;
+        top: -70vh;
+    }
+    #child_pro_cat{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);   
+ }
+
+ .next{
+    position: relative;
+    top: -60vh;
+}
+
+ #EvRoom{
+            position: relative;
+            top: -55vh;
+        }
+
+        #child_Evroom{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+         }
+
+         #child_Session{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        #this_session{
+            margin-top: -50vh !important;
+        }
+}

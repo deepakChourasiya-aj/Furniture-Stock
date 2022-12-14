@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    
+}
+
+body{
+    background-color: rgb(243, 240, 240);
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000000 !important;
+}
+
+
+#main_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    /* padding: 20px; */
+    text-align: center;
+    margin-top: 15px;
+}
+
+#main_nav  input{
+    padding: 8px;
+    width: 70%;
+    background-color: rgb(238, 236, 236);
+    border: 1px solid rgb(209, 208, 208);
+    margin-left: -40px;
+
+}
+
+#main_nav  img{
+    width: 85%;
+    margin-left: -35px;
+    /* border: 2px solid red; */
+
+}
+#ind{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+#ind img{
+    border-radius: 100%;
+    margin: 0 10px;
+    width: 3%;
+}
+
+
+#totnav{
+   border: 2px solid rgb(237, 237, 237);
+   height: 160px;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   background-color: white;
+   z-index: 999;
+   
+}
+
+
+.navbar {
+    border-radius: 0 !important;
+    border: 2px solid rgb(206, 206, 206) !important;
+    /* min-height: px; */
+    background: #ffffff !important;
+    /* height: 5px; */
+}
+
+.navbar a {
+    color: rgb(0, 0, 0) !important;
+    /* padding: 10px !important; */
+    /* margin: 15px 10px !important; */
+    /* border: 1px solid red; */
+    /* font-size: 1px; */
+    background-color: white !important;
+   
+
+}
+
+.navbar-right a {
+    font-size: 1em !important;
+    
+}
+
+.navbar-right a:hover {
+    font-size: 1.01em !important;
+    text-decoration: underline !important;
+    /* color: rgb(157, 0, 0) !important; */
+}
+
+
+.navbar-brand {
+    font-size: 1.7em !important;
+    text-align: center;
+    background-color: white !important;
+
+}
+
+.anime a:before {
+    content: '';
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 1px !important;
+    background-color: rgb(255, 255, 255) !important;
+    transform: scaleX(0);
+    transition: all .7s;
+}
+
+.anime a:hover:before {
+    transform: scaleX(1);
+  
+}
+.anime{
+    background-color: white ;
+
+}
+
+/* icon bar ***************** */
+ 
+#searchicon{
+    background-color: red;
+    padding: 8px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.icondiv{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 250px;
+    justify-content: space-evenly;
+    
+}
+.icondiv a{
+    text-decoration: none;
+    color: black;
+}
+.icondiv i{
+    font-size: 25px;
+}
+.icondiv i:hover{
+    color: rgb(56, 56, 56);
+}
+
+.ndiv{
+    width: 95%;
+    margin: auto;
+}
+
+
+
+#checkbtn{
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    border: none;
+}
+#checkbtn:hover{
+    border-radius: 5px;
+    background-color: rgb(72, 71, 71);
+}
+
+
+
+@media (max-width:767px) {
+
+    .anime a {
+        display: inline-block !important;
+        margin: 10px 7px 7px 7px !important;
+    }
+
+    #checkbtn{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    .icondiv i{
+        font-size: 20px;
+    }
+
+    #main_nav  img{
+        width: 100%;
+    }
+
+    #btnlog{
+        width: 160%;
+        text-align: center;
+        margin-left: -140px;
+    }
+    #checkbtn{
+        margin-right: 10px;
+    }
+    .icondiv i{
+        font-size: 17px;
+    }
+
+}
