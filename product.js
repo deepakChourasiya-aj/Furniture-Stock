@@ -148,4 +148,5 @@ function addtocart(el){
   product_arr.push(el);
   localStorage.setItem("cart_product",JSON.stringify(product_arr));
 
+  
 }
