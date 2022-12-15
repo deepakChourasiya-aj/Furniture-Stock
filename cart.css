@@ -1,0 +1,13 @@
+#main{
+    display: flex;
+    width: 95%;
+}
+
+
+#cart{
+    border: 1px solid black;
+}
+
+#total-bill, #promo-code{
+    border: 1px solid black;
+}

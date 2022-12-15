@@ -1,6 +1,5 @@
 const registerForm = document.getElementById("register-form");
-
-
+let usersDetails = JSON.parse(localStorage.getItem("users-details")) || [];
 
 
 //User Registration Details
@@ -23,9 +22,11 @@ registerForm.addEventListener("submit", (e)=>{
             phone,
             password
         };
-        console.table(registerdData);
+        usersDetails.push(registerdData);
+        localStorage.setItem("users-details", JSON.stringify(usersDetails));
+        alert("Account created successfully. You can Login now.")
     }else{
-        alert("Password is not maching. Please check and try again");
+        alert("Password is not matching. Please check and try again");
     } 
 });
 
