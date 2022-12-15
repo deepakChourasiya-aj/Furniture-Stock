@@ -33,6 +33,12 @@ function produtrender(data){
    
        let div = document.createElement("div");
        div.setAttribute("class","pro_img_item");
+
+       let btn_div2 = document.createElement("div");
+       let btn_div3 = document.createElement("div");
+
+       let btn_div1 = document.createElement("div");
+       btn_div1.setAttribute("class","button_div_container");
    
        let pi = document.createElement("img");
        pi.src=el.img;
@@ -41,27 +47,105 @@ function produtrender(data){
        price.innerText=`Sale INR:-`+" "+el.price;
        price.style.color="red";
 
+       let dec = document.createElement("h4");
+       dec.innerText=el.item;
+       
+
+       let addcart = document.createElement("button");
+       addcart.innerText="Add to Cart";
+       addcart.setAttribute("class","add_to_cart_btn");
+       addcart.onclick=()=>{
+        addtocart(el);
+       }
+
+
        let display = document.createElement("button");
        display.innerText="Details";
+       display.setAttribute("class","detail_pro_info");
        display.onclick = () =>{
         displayData(el);
        }
-       div.append(pi,price,display);
+
+       btn_div2.append(addcart);
+       btn_div3.append(display);
+       btn_div1.append(btn_div2,btn_div3)
+       div.append(pi,dec,price,btn_div1);
        cont.append(div);
        side.append(cont)
     })
 
 }
-produtrender(data);
+ produtrender(data);
 
 let btn=document.getElementById("btn");
 btn.addEventListener("change",function(){
-    let  value = document.getElementById("pro").value;
-    console.log(value);
+    let value = document.getElementById("pro").value;
+    sortdata(data,value);
+    
 })
 
-let displayData = async(el)=>{ 
-   alert(el.id);
+function sortdata(data,value)
+{
+   if(value=="low"){
+    data.sort((a,b)=>{
+        return +[a.price] - [+b.price];
+    })
+    produtrender(data);
+   }else if(value=="high"){
+    data.sort((a,b)=>{
+        return +[b.price] - [+a.price];
+    })
+    produtrender(data);
+   }
 }
 
 
+let btn1 = document.querySelector(".btn1");
+btn1.addEventListener("change",function(){
+    let value = document.querySelector(".filter_pro").value;
+    filtercat(data,value);
+    
+
+})
+
+
+
+function filtercat(data,value){
+    
+    let data2=[];
+   data.filter((el)=>{
+    if(value==el.catogary){
+       return (data2.push(el));
+       
+    }
+    produtrender(data2);
+   })
+  
+}
+let btnprie = document.querySelector("#prie_1");
+btnprie.addEventListener("change",function(){
+    let privalue = document.querySelector(".filter_pri").value;
+    filterbyprice(data,privalue);
+})
+
+function filterbyprice(data,value){
+    let data2=[];
+    data.filter((el)=>{
+     if(el.price <= value ){
+        return (data2.push(el));
+        
+        
+     }
+    
+     produtrender(data2);
+    })
+}
+
+
+function addtocart(el){
+ 
+  let product_arr = JSON.parse(localStorage.getItem("cart_product")) || [];
+  product_arr.push(el);
+  localStorage.setItem("cart_product",JSON.stringify(product_arr));
+
+}
