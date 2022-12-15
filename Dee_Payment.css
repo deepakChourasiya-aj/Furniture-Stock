@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+body{
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(161, 202, 202); */
+}
+/* conatiner part */
+.dee_container{
+    width: 750px;
+    height: 500px;
+    /* border: 3px solid rgb(14, 0, 0) ; */
+    border-radius: 10px;
+    background-color:skyblue;
+    display: flex;
+    flex-direction: column;
+    padding:40px ;
+    color: white;
+    justify-content: space-around;
+
+}
+.dee_container img{
+    width: 100px;
+}
+.dee_container h1{
+   text-align: center;
+}
+.dee_first_row{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.dee_owner{
+    width: 100%;
+    margin-right: 40px;
+}
+.dee_input_field{
+    border: 1px solid blue;
+
+}
+.dee_input_field input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.dee_slections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dee_data select{
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+button{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: dotted;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .7s;
+    border: none;
+}
+button:hover{
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(270deg);
+    }
+}
+/* margins  */
+#deecardh3{
+    padding-bottom: 5px;
+}
+#deecardhExpire3{
+    padding-top: 10px;
+}
