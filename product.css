@@ -17,27 +17,69 @@
     padding: 9px;
     margin: auto;
 }
+
+#mid-body div h1{
+    font-style: oblique;
+    font-family: cursive;
+    font-weight: bold;
+}
+#wrapper{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1a1a1d;
+}
+
+#wrapper:hover{
+    color: rgb(237, 31, 154);
+    
+
+}
+
 #procard{
     width: 80%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: auto;
+    gap: 25pX;
+    padding-top: 30px;
     text-align: center;
     margin: auto;
 }
 #procard>div{
-    margin-bottom: 30px;
+    height: auto;
+    border: 1px solid rgb(229, 233, 247);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#procard>div:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.proitem a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+   
 }
  .proitem img{
     width: 70%;
  }
+
 
  #sort_btn{
     width: 80%;
     height: auto;
     text-align: right;
     margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     margin: auto;
  }
 
@@ -58,6 +100,7 @@
     height: auto;
 }
 
+
 .sidebar2{
     width: 90%;
     height: auto;
@@ -75,9 +118,23 @@
     height: auto;
     text-align: center;
     justify-items:center;
-    
-  
+    border: 1px solid #dedede;
+    margin: auto;
+
 }
+
+.product_items:hover {
+    border-color: rgba(161, 97, 244, 0.489);
+
+}
+
+#filter-heading{
+    color: rgb(35, 33, 34);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
 
 .pro_img_item>img{
     width: 100%;
@@ -108,7 +165,41 @@
     border: none;
     outline: 1px solid #ccc;
     outline-offset: -1px;
+    font-style:oblique;
+    font-family: sans-serif;
+    font-weight:bolder;
 }
+
+.button_div_container{
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.button_div_container>div{
+    justify-content: space-between;
+    border: 1px solid purple;
+    margin-top: 30px;
+    margin: auto;
+}
+
+
+.add_to_cart_btn{
+    width: 100%;
+    height: 40px;
+    color: rgb(247, 254, 254);
+    border-radius: 10px;
+    background-color: #1a1a1d;
+}
+.pro_img_item h4{
+    color: rgba(23, 23, 23, 0.488);
+    justify-content: left;
+}
+
 
 
 
