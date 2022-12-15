@@ -182,7 +182,7 @@
 
 .button_div_container>div{
     justify-content: space-between;
-    border: 1px solid purple;
+    
     margin-top: 30px;
     margin: auto;
 }
@@ -198,6 +198,7 @@
 .pro_img_item h4{
     color: rgba(23, 23, 23, 0.488);
     justify-content: left;
+    
 }
 
 
