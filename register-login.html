@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register-login.css">
 </head>
 <body>
     <div id="main">
@@ -26,12 +26,16 @@
             <input type="password" placeholder="Confirm Password" name="" id="confirm-password">
             <input type="submit" value="Create Account">
         </form>
+        <b><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></b>
+        <p>**You can unsubscribe anytime</p>
         </div>
         <div id="login-div">
             <form id="login-form">
             <h2>Sign In</h2>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" name="" id="password">
+            <label for="">Email Address*</label>
+            <input type="email" placeholder="Email" id="login-email" required>
+            <label for="">Password*</label>
+            <input type="password" placeholder="Password" name="" id="login-password">
             <input type="submit" value="Sign In">
         </form>
         </div>
@@ -39,3 +43,4 @@
 </body>
 </html>
 <script src="register.js"></script>
+<script src="login.js"></script>

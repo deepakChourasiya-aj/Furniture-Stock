@@ -1,0 +1,84 @@
+#main{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#register-div, #login-div{
+    width: 40%;
+    padding: 10px;
+    height: auto;
+    font-size: 15px;
+}
+
+#register-form, #login-form{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+}
+
+
+#register-div, #login-div{
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 0.5rem;
+    background-color: blanchedalmond;
+}
+
+
+a{
+    margin: 0.5rem;
+    color: black;
+}
+
+
+#register-form>input, #login-form>input{
+    margin: 8px 0px;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+}
+
+#register-form>input[type="submit"], #login-form>input[type="submit"]{
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+
+
+#register-form>input[type="submit"]:hover, #login-form>input[type="submit"]:hover{
+    box-shadow: rgb(40, 40, 40) 3px 3px 6px 0px inset, rgba(31, 31, 31, 0.5) -3px -3px 6px 1px inset;
+    color: rgb(34, 255, 34);
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+    
+}
+
+/* medium screens / Tablet view */
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    #main{
+        width: 90%;
+    } 
+    #register-div, #login-div{
+        width: 90%;
+    } 
+}
+  
+/* small screens / moblie view */
+@media screen and (min-width: 200px) and (max-width: 499px) {
+    #main{
+        width: 97%;
+        flex-direction: column;
+    }  
+    #register-div, #login-div{
+        width: 90%;
+    }
+    #login-div{
+        margin-top: 1rem;
+    }
+}
