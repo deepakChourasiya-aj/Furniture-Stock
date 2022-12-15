@@ -77,11 +77,11 @@ let navbar = document.querySelector('#totnav')
     navbar.innerHTML=`
     <section id="main_nav">
 <div class="imgdiv">
-
-    <img id="weblogo"src="img/WhatsApp Image 2022-12-13 at 7.44.58 PM.jpeg" alt="">
+<a href=""><img id="weblogo"src="img/WhatsApp Image 2022-12-13 at 7.44.58 PM.jpeg" alt=""></a>
+    
 </div>
 
-    <input type="text" placeholder="Search... everything you find ship for free"> 
+    <input id="searchhove" type="text" placeholder="Search... everything you find ship for free"> 
     <i id="searchicon" class="fa fa-search"></i>
 
 <div class="icondiv">
@@ -104,8 +104,6 @@ let navbar = document.querySelector('#totnav')
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
 
-
-
         </button>
 
     </div>
@@ -113,7 +111,7 @@ let navbar = document.querySelector('#totnav')
 
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right anime">
-            <li><a href="#">Furniture</a></li>
+            <li  ><a  id="furn" href="#">Furniture</a></li>\
             <li><a href="#">Rugs</a></li>
             <li><a href="#">Decor</a></li>
             <li><a href="#">Bedding</a></li>
@@ -121,7 +119,6 @@ let navbar = document.querySelector('#totnav')
             <li><a href="#">Kitchen</a></li>
             <li><a href="#">Outdoor</a></li>
             <li><a href="#">Lighting</a></li>
-            <li><a href="#">Kids & Baby</a></li>
             <li><a href="#">Gifts</a></li>
             <li><a href="#">More</a></li>  
             <li><a href="">|</a></li>
@@ -136,3 +133,47 @@ let navbar = document.querySelector('#totnav')
 
 
     `
+
+let furn = document.querySelector('#furn')
+let hovef=document.querySelector('#hov_Eff')
+
+furn.addEventListener('mouseover', function(){
+hovef.style.visibility="visible"
+
+})
+
+furn.addEventListener('mouseout', function(){
+hovef.style.visibility="hidden"
+
+})
+
+hovef.addEventListener('mouseover', function(){
+    hovef.style.visibility="visible"
+})
+hovef.addEventListener('mouseout', function(){
+    hovef.style.visibility="hidden"
+    
+})
+
+
+    // serachhover
+    let searhov = document.querySelector('#searchhove')
+    let shovef=document.querySelector('#Sear_hov_Eff')
+
+    searhov.addEventListener('mouseover', function(){
+        shovef.style.visibility="visible"
+        
+        })
+        
+        searhov.addEventListener('mouseout', function(){
+        shovef.style.visibility="hidden"
+        
+        })
+        
+        shovef.addEventListener('mouseover', function(){
+            shovef.style.visibility="visible"
+        })
+        shovef.addEventListener('mouseout', function(){
+            shovef.style.visibility="hidden"
+            
+        })
