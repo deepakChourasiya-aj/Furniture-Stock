@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dee_Payment.css">
+    <title>Payment Page</title>
+
+</head>
+<style>
+   
+</style>
+<body>
+    <div class="dee_container">
+        <h1 id="dee_PaymentStatus"> ₹ Payment GateWay ₹</h1>
+        <div class="dee_first_row">
+            <div class="dee_owner">
+                <h3 id="deecardh3">Owner</h3>
+                <div class="dee_input_field">
+                    <input type="text" id="dee_ownerPay" placeholder="Card Holder Name">
+                </div>
+            </div>
+            <div class="dee_cvv">
+                <h3 id="deecardh3">CVV</h3>
+                <div class="dee_input_field">
+                    <input id="dee_cvvPay" type="password" >
+                </div>
+            </div>
+        </div>
+        <div class="dee_seond_row">
+            <div class="dee_card_owner">
+                <h3 id="deecardh3">Card Number</h3>
+                <div class="dee_input_field">
+                    <input type="text" id="dee_cardNoPay" >
+                </div>
+            </div>
+            <div class="dee_thire_row">
+                <h3 id="deecardhExpire3">Card Expire</h3>
+                <div class="dee_slections">
+                   <div class="dee_data">
+                    <select name="months" id="dee_months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="Sept">Sept</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+
+                    <select name="years" onchange="yearschange()" id="dee_years">
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+
+                    </select>
+                   </div>
+                   <div class="cards">
+                      <img src="mc.png" alt="">
+                      <img src="pp.png" alt="">
+                      <img src="vi.png" alt="">
+
+                   </div>
+                </div>
+            </div>
+        </div>
+        <button  onclick="paymentStatus()" id="dee_paymentbutton" >Confirm Payment</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function yearschange(){
+        let val = document.querySelector('#dee_years').value;
+        console.log(val);
+    }
+    yearschange()
+    let  exp = document.querySelector('#dee_years').value;
+    let  months = document.querySelector('#dee_months').value;
+    let cardNO =  document.querySelector('#dee_cardNoPay').value;
+    let ownNma = document.querySelector('#dee_ownerPay').value;
+    let cvvval = document.querySelector('#dee_cvvPay').value;
+    let payment = document.querySelector('#dee_PaymentStatus');
+    async function paymentStatus(){
+        payment.innerHTML = 'Processing Payment...'
+        return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                resolve(payment.innerHTML = 'Successfully Paid');
+                console.log(exp,months,cardNO,ownNma,cvvval);
+                console.log('resolved');
+                
+            },2000)
+        })
+    }
+    payment.innerHTML = '₹ Payment GateWay ₹'
+    // console.log(paymentStatus());
+</script>
