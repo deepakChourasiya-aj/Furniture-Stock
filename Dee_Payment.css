@@ -4,8 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
-    
 }
 body{
     width: 95%;
@@ -92,4 +90,7 @@ button:hover{
 }
 #deecardhExpire3{
     padding-top: 10px;
+}
+#dee_PaymentStatus{
+    color: black;
 }
