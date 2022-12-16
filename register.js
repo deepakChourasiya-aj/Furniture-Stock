@@ -1,6 +1,6 @@
+import { navbar } from "./index.js";
 const registerForm = document.getElementById("register-form");
 let usersDetails = JSON.parse(localStorage.getItem("users-details")) || [];
-
 
 //User Registration Details
 registerForm.addEventListener("submit", (e)=>{
@@ -30,3 +30,11 @@ registerForm.addEventListener("submit", (e)=>{
     } 
 });
 
+
+
+let newbavbar =document.querySelector('#navbarstag')
+
+
+newbavbar.innerHTML= navbar()
+
+console.log(newbavbar);
