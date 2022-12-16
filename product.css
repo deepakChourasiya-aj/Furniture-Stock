@@ -173,6 +173,7 @@
 .button_div_container{
     width: 90%;
     height: auto;
+    align-items: center;
     justify-content: center;
     justify-content: space-between;
     display: flex;
@@ -182,7 +183,8 @@
 
 .button_div_container>div{
     justify-content: space-between;
-    
+    align-items: center;
+    padding: 20px;
     margin-top: 30px;
     margin: auto;
 }
@@ -196,9 +198,18 @@
     background-color: #1a1a1d;
 }
 .pro_img_item h4{
-    color: rgba(23, 23, 23, 0.488);
+    margin-top: 10px;
+    color: rgb(151, 29, 29);
     justify-content: left;
     
+}
+
+.detail_pro_info {
+    width: 150%;
+    height: 40px;
+    color: rgb(249, 248, 248);
+    border-radius: 10px;
+    background-color: #139d5d;
 }
 
 

@@ -30,7 +30,7 @@ function produtrender(data){
     data.forEach((el)=>{
        let cont = document.createElement("div");
        cont.setAttribute("class","product_items");
-   
+
        let div = document.createElement("div");
        div.setAttribute("class","pro_img_item");
 
@@ -46,6 +46,7 @@ function produtrender(data){
        let price = document.createElement("h3");
        price.innerText=`Sale INR:-`+" "+el.price;
        price.style.color="red";
+       price.style.marginTop="10px";
 
        let dec = document.createElement("h4");
        dec.innerText=el.item;
@@ -76,6 +77,14 @@ function produtrender(data){
 
 }
  produtrender(data);
+
+function displayData(el){
+    
+        localStorage.setItem("detail_data",JSON.stringify(el));
+        window.location.href="detail.html";
+
+       
+}
 
 let btn=document.getElementById("btn");
 btn.addEventListener("change",function(){
@@ -147,6 +156,6 @@ function addtocart(el){
   let product_arr = JSON.parse(localStorage.getItem("cart_product")) || [];
   product_arr.push(el);
   localStorage.setItem("cart_product",JSON.stringify(product_arr));
-
+  alert("produt addded to cart")
   
 }
