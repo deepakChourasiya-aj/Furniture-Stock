@@ -1,6 +1,8 @@
+import { navbar } from "./index.js";
 const registerForm = document.getElementById("register-form");
 let usersDetails = JSON.parse(localStorage.getItem("users-details")) || [];
 let usersApi = "http://localhost:3000/api/users";
+
 
 //User Registration Details
 registerForm.addEventListener("submit", (e)=>{
@@ -31,6 +33,7 @@ registerForm.addEventListener("submit", (e)=>{
     } 
 });
 
+
 async function addUser(registerdData){
     try {
         let res = await fetch(usersApi, {
@@ -47,3 +50,10 @@ async function addUser(registerdData){
         alert("error");
     }
 }
+
+
+
+
+
+
+
