@@ -2,7 +2,11 @@
 body{
     margin: 0;
     padding: 0;
+
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 .ndiv{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -275,12 +279,15 @@ text-align: center;
     border-radius: 10px;
 }
 
+
+
 /* media_Query */
 
 
 
-@media all and (min-width:100px) and (max-width:550px){
-    #deals{
+@media all and (min-width:100px) and (max-width:450px){
+
+     #deals{
         display: grid;
         grid-template-columns: repeat(2,1fr);
       
@@ -334,10 +341,38 @@ text-align: center;
         #child_trend{
             display: grid;
             grid-template-columns: repeat(1,1fr);
+        } 
+
+
+        /* hovermedia */
+        #Sear_hov_Eff{visibility: hidden; z-index: 999; color: white;}
+        #Sear_hov_Eff {z-index: -1; visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+        #hov_Eff_furn{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+        #hov_Eff_sec{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white; }
+        #hov_Eff_dec{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+        #hov_Eff_bed{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+        #hov_Eff_home{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+        #hov_Eff_kits{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+        #hov_Eff_out{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+        #holiday{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+        #selss{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -40px; color: white;}
+
+        #deals{
+            padding-top: 30px !important;
+        }
+        .delsanc{
+            padding-bottom: 55px !important;
+            width: 80% !important;
         }
 
+        /* #Sear_hov_Eff{
+            width: 30%;
+            z-index: 999;
+            height: 300px;
+        } */
+
 }
-@media all and (min-width:551px) and (max-width:750px){
+ @media all and (min-width:551px) and (max-width:750px){
     #deals{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -391,4 +426,16 @@ text-align: center;
             grid-template-columns: repeat(2,1fr);
         }
 
-}
+        #Sear_hov_Eff{visibility: hidden; z-index: 999;}
+        #Sear_hov_Eff {z-index: -1; visibility: hidden;font-size: 1px;margin-left: -1px;}
+        #hov_Eff_furn{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px;}
+        #hov_Eff_sec{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px; }
+        #hov_Eff_dec{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px;}
+        #hov_Eff_bed{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px;}
+        #hov_Eff_home{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px;}
+        #hov_Eff_kits{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px;}
+        #hov_Eff_out{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px;}
+        #holiday{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px;}
+        #selss{z-index: -1;visibility: hidden;font-size: 1px;margin-left: -1px;}
+
+} 

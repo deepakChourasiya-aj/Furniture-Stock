@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(243, 240, 240);
+    background-color: #FEFCFF;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -18,7 +18,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: #FEFCFF;
     /* padding: 20px; */
     text-align: center;
     margin-top: 15px;
@@ -51,7 +51,7 @@ body{
 }
 
 
-#totnav{
+#togsnav{
    border: 2px solid rgb(237, 237, 237);
    height: 100px;
    width: 100%;
@@ -218,32 +218,6 @@ body{
 
 
 
-/* :hover */
-
-#hov_Eff{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    background-image: linear-gradient(90deg, rgb(144, 19, 19) 0%, rgb(172, 172, 172) 100%);
-    width: 80%;
-    margin: auto;
-    gap: 10px;
-    padding: 10px;
-    visibility: hidden;
-    position: absolute;
-    top: 21%;
-}
-/* #hov_Eff div{
-
-
-} */
-#hov_Eff div img{
-    width: 100%;
-    margin-top: 7%;
-}
-
-h3,h4{
-    font-size: 1.2rem;
-}
 
 /* searchhover */
 
@@ -255,15 +229,27 @@ h3,h4{
     margin: 0 200px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     border-radius: 10px;
-    visibility: hidden;
-    position: absolute;
+    visibility: hidden ;
+    position: fixed;
     top: 21%;
+    z-index: 1;
+    font-size: 0.5rem !important;
+
 }
 #h1{
 background-color: rgb(255, 255, 255);
 width: 30%;
 height: 100%;
 padding: 10px;
+
+}
+#h1 h3{
+    font-size: 2rem;
+    cursor: pointer;
+}
+#h1 h3:hover{
+    color: rgb(254, 60, 73);
+    text-decoration: underline;
 }
 #h2{
 background-color: rgb(255, 255, 255);
@@ -282,4 +268,252 @@ gap: 15px;
 #h2 div img{
     width: 100%;
 
+}
+
+
+
+/* :hover */
+#hov_Eff_home,
+#hov_Eff_bed,
+#hov_Eff_dec,
+#hov_Eff_sec,
+#hov_Eff_furn,
+#hov_Eff_kits,
+#hov_Eff_out
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #FEFCFF;
+    width: 70% !important;
+    margin: 0 30vh ;
+    gap: 10px;
+    padding: 10px;
+    visibility: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: fixed;
+    z-index: 999;
+    top: 21%;
+    line-height: 0.5;
+}
+
+
+#hov_Eff_kits{
+    position: fixed;
+    z-index: 999;
+    top: 21%;
+    line-height: 0.5;
+}
+
+
+
+#hov_Eff_home h3{
+    font-size:2rem !important;
+    line-height: 0.5;
+}
+
+#hov_Eff_home h3{
+    font-size:2rem !important;
+}
+#hov_Eff_home h4:hover{
+    color: rgb(254, 60, 73);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hov_Eff_home h4{
+    font-size:1.5rem !important;
+    line-height: 0.9;
+}
+
+#hov_Eff_home div img{
+    width: 100%;
+}
+
+#hov_Eff_bed h3{
+    font-size:2rem !important;
+    line-height: 0.5;
+}
+
+#hov_Eff_bed h3{
+    font-size:2rem !important;
+}
+#hov_Eff_bed h4:hover{
+    color: rgb(254, 60, 73);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hov_Eff_bed h4{
+    font-size:1.5rem !important;
+    line-height: 0.9;
+}
+
+#hov_Eff_bed div img{
+    width: 100%;
+}
+
+
+
+#hov_Eff_dec h3{
+    font-size:2rem !important;
+    line-height: 0.5;
+}
+
+#hov_Eff_dec h3{
+    font-size:2rem !important;
+}
+#hov_Eff_dec h4{
+    font-size:1.5rem !important;
+    line-height: 0.9;
+}
+#hov_Eff_dec h4:hover{
+    color: rgb(254, 60, 73);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hov_Eff_dec div img{
+    width: 100%;
+}
+
+
+#hov_Eff_furn h3{
+    font-size:2rem !important;
+    line-height: 0.5;
+}
+
+#hov_Eff_furn h3{
+    font-size:2rem !important;
+}
+#hov_Eff_furn h4{
+    font-size:1.5rem !important;
+    line-height: 0.9;
+}
+#hov_Eff_furn h4:hover{
+    color: rgb(254, 60, 73);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hov_Eff_furn div img{
+    width: 100%;
+}
+
+
+#hov_Eff_sec h3{
+    font-size:2rem !important;
+    line-height: 0.5;
+}
+
+#hov_Eff_sec h3{
+    font-size:2rem !important;
+}
+#hov_Eff_sec h4{
+    font-size:1.5rem !important;
+    line-height: 0.9;
+}
+#hov_Eff_sec h4:hover{
+    color: rgb(254, 60, 73);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hov_Eff_sec div img{
+    width: 100%;
+}
+
+
+
+/* #hov_Eff_kits  #hov_Eff_out*/
+
+#hov_Eff_out h3{
+    font-size:2rem !important;
+    line-height: 0.5;
+}
+
+#hov_Eff_out h3{
+    font-size:2rem !important;
+}
+#hov_Eff_out h4{
+    font-size:1.5rem !important;
+    line-height: 0.9;
+}
+#hov_Eff_out h4:hover{
+    color: rgb(254, 60, 73);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hov_Eff_out div img{
+    width: 100%;
+}
+
+
+
+#hov_Eff_kits h3{
+    font-size:2rem !important;
+    line-height: 0.5;
+}
+
+#hov_Eff_kits h3{
+    font-size:2rem !important;
+}
+#hov_Eff_kits h4{
+    font-size:1.5rem !important;
+    line-height: 0.9;
+}
+#hov_Eff_kits h4:hover{
+    color: rgb(254, 60, 73);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hov_Eff_kits div img{
+    width: 100%;
+}
+
+
+/* holi */
+#holiday{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    width: 70%;
+    margin: 0 30vh ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    position: absolute;
+    top: 21%;
+    background-color: #FEFCFF;
+    padding: 0.5%;
+}
+#holiday div img{
+    width: 90%;
+   
+}
+#holiday div img:hover{
+    width: 88%;
+}
+
+#holiday div{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+/* selssss */
+#selss{
+    width: 70%;
+    margin: 0 30vh ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 2px;
+    visibility: hidden;
+    position: absolute;
+    top: 21%;
+    background-color: #FEFCFF;
+    padding: 2px;
+    
+}
+
+#childsels{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+#childsels img{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 100%;
 }
