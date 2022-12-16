@@ -2,8 +2,51 @@ const loginForm = document.getElementById("login-form");
 let usersData = JSON.parse(localStorage.getItem("users-details")) || [];
 let userLoggedIn = false;
 
-loginForm.addEventListener("submit", (e)=>{
+
+// ---------- for Local Storage ----------
+// loginForm.addEventListener("submit", (e)=>{
+//     e.preventDefault();
+
+//     let email = document.getElementById("login-email").value;
+//     let password = document.getElementById("login-password").value;
+
+//     let emailCheck = false;
+//     let passCheck = false;
+//     for(user of usersData){
+//         if(email==user.email){
+//             emailCheck=true;
+//         }
+//         if(password==user.password){
+//             passCheck=true;
+//         }
+//     }
+
+//     if(emailCheck&&passCheck){
+//         userLoggedIn=true;
+//         localStorage.setItem("user-logged-in", userLoggedIn);
+//         alert("Login Successful");
+//     } else if(emailCheck&& !passCheck){
+//         alert("Wrong Password")
+//     } else {
+//         alert("It's like you are a new user. Please Create an account before you login.")
+//     }
+// });
+// -----------------------------------------------------------
+
+loginForm.addEventListener("submit", async (e)=>{
     e.preventDefault();
+    try {
+        let res = await fetch("http://localhost:3000/api/users")
+        let data = await res.json();
+        userAuth(data);
+    } catch (error) {
+        console.log(error)
+        alert("error");
+    }
+});
+
+
+function userAuth(userData){
 
     let email = document.getElementById("login-email").value;
     let password = document.getElementById("login-password").value;
@@ -11,18 +54,28 @@ loginForm.addEventListener("submit", (e)=>{
     let emailCheck = false;
     let passCheck = false;
 
-    for(user of usersData){
+
+
+    let userDetails = {
+        name : null,
+        userloggedin: false
+    }; 
+
+    for(user of userData){
         if(email==user.email){
             emailCheck=true;
+            userDetails.name=user.lastname
         }
         if(password==user.password){
             passCheck=true;
+            userDetails.name=user.lastname
         }
     }
 
     if(emailCheck&&passCheck){
-        userLoggedIn=true;
-        localStorage.setItem("user-logged-in", userLoggedIn);
+        userDetails.userloggedin=true;
+        loggedInUser(userDetails);
+        // localStorage.setItem("user-logged-in", userLoggedIn);
         alert("Login Successful");
     } else if(emailCheck&& !passCheck){
         alert("Wrong Password")
@@ -30,6 +83,20 @@ loginForm.addEventListener("submit", (e)=>{
         alert("It's like you are a new user. Please Create an account before you login.")
     }
 
-});
+}
 
 
+async function loggedInUser(userDetails){
+    try {
+        let res = await fetch("http://localhost:3000/api/loggedinuser", {
+            method: "POST",
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userDetails)
+        })
+        
+    } catch (error) {
+        console.log(error);
+    }
+}

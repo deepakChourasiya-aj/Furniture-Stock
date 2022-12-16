@@ -1,0 +1,34 @@
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+  "name": "ABC XYZ",
+  "image": "/images/avatar/avatar1.jpeg",
+  "department": 1,
+  "salary": 95000
+}
+
+###
+
+DELETE  http://localhost:3000/api/todos/18
+
+
+### 
+GET http://localhost:3000/api/users
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "id":2,
+  "name":"admin"
+}
+
+###
+GET http://localhost:3000/api/users
+
+
+###
+
+DELETE http://localhost:3000/api/users/2
