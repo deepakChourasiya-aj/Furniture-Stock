@@ -1,13 +1,156 @@
 #main{
     display: flex;
     width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
 }
 
+h1{
+    margin-left: 2.5%;
+}
 
 #cart{
     border: 1px solid black;
+    width: 70%;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+#add-cart{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#add-cart img{
+    width: 30%;
+}
+
+#add-cart>span{
+    padding: 0px 20px;
+    width: 70%;
+    text-align: left;
+    height: 100%;
+}
+
+#remove-btn{
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 5px 10px;
+}
+
+#remove-btn:hover{
+    background-color: black;
+}
+
+#add-cart>span>span{
+    display: flex;
+}
+
+#add-cart select{
+    margin: 0px 20px;
+}
+
+
+#cart-bill{
+    width: 22%;
+    gap: 20px;
 }
 
 #total-bill, #promo-code{
     border: 1px solid black;
+    width: 100%;
+    padding: 5%;
+}
+
+#total-bill{
+    margin-top: 10px;
+}
+
+table{
+    width: 100%;
+}
+
+tr td:nth-child(2){
+    text-align: right;
+}
+
+#signin-btn{
+    padding: 10px 30px;
+    background: none;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#signin-btn:hover{
+    box-shadow: none;
+}
+
+#checkout-btn{
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+#checkout-btn:hover{
+    background-color: black;
+}
+
+#checkout-btn img{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+#promo-code input{
+    width: 60%;
+    margin-top: 10px;
+    padding: 10px 5px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+
+#promo-code button{
+    width: 30%;
+    padding: 10px 5px;
+    margin-top: 10px;
+    background: none;
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+
+
+/* medium screens / Tablet view */
+@media screen and (min-width: 500px) and (max-width: 800px) {
+   #main{
+    flex-direction: column;
+   }
+   #cart{
+    width: 100%;
+    margin-bottom: 20px;
+   }
+   #cart-bill{
+    width: 90%;
+   }
+}
+  
+/* small screens / moblie view */
+@media screen and (min-width: 200px) and (max-width: 499px) {
+   #main{
+    flex-direction: column;
+   }
+   #cart{
+    width: 100%;
+    margin-bottom: 20px;
+   }
+   #cart-bill{
+    width: 90%;
+   }
 }
