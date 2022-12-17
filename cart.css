@@ -21,6 +21,7 @@ h1{
     width: 100%;
     margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px;
 }
 
 #add-cart img{
@@ -52,7 +53,8 @@ h1{
 }
 
 #add-cart select{
-    margin: 0px 20px;
+    margin: auto 20px;
+    height: 20px;
 }
 
 
