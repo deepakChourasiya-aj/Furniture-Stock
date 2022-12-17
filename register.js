@@ -3,6 +3,8 @@ import { navbar } from "./function.js";
 console.log(navbar)
 const registerForm = document.getElementById("register-form");
 let usersDetails = JSON.parse(localStorage.getItem("users-details")) || [];
+let usersApi = "http://localhost:3000/api/users";
+
 
 //User Registration Details
 registerForm.addEventListener("submit", (e)=>{
@@ -25,19 +27,36 @@ registerForm.addEventListener("submit", (e)=>{
             password
         };
         usersDetails.push(registerdData);
+        addUser(registerdData);
         localStorage.setItem("users-details", JSON.stringify(usersDetails));
-        alert("Account created successfully. You can Login now.")
+        
     }else{
         alert("Password is not matching. Please check and try again");
     } 
 });
 
 
+async function addUser(registerdData){
+    try {
+        let res = await fetch(usersApi, {
+            method: "POST",
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(registerdData)
+        })
+        if(res.ok){
+            alert("Account created successfully. You can Login now.");
+        }
+    } catch (error) {
+        alert("error");
+    }
+}
 
-let newbavbar =document.querySelector('#navbarstag')
 
 
-newbavbar.innerHTML= navbar();
 
-// console.log(newbavbar);
+
+
+
 

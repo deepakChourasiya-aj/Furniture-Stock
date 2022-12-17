@@ -30,68 +30,88 @@
                     <span class="material-symbols-sharp">
                         dashboard
                         </span>
-                        <h3>Dashboard</h3>
+                        <h3 class="dar">Dashboard</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         person
                         </span>
-                        <h3>Customer</h3>
+                        <h3 class="dar">Customer</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         receipt_long
                         </span>
-                        <h3>Order</h3>
+                        <h3 class="dar">Order</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         insights
                         </span>
-                        <h3>Analytics</h3>
+                        <h3 class="dar">Analytics</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         mail
                         </span>
-                        <h3>Messages</h3>
+                        <h3 class="dar">Messages</h3>
                         <span class="message-count">26</span>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         inventory
                         </span>
-                        <h3>products</h3>
+                        <h3 class="dar">products</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         report
                         </span>
-                        <h3>Reports</h3>
+                        <h3 class="dar">Reports</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         settings
                         </span>
-                        <h3>Settings</h3>
+                        <h3 class="dar">Settings</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         add
                         </span>
-                        <h3>Add Products</h3>
+                        <h3 class="dar" onclick="menuitem2()">Add Products</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">
                         logout
                         </span>
-                        <h3>LogOut</h3>
+                        <h3 class="dark">LogOut</h3>
                 </a>
 
             </div>
         </aside>
         <!--end of side bar-->
         <main>
+               
+    <div id="feedback">
+        
+            <h3 class="dar" onclick="menuitem2()"><span>+</span> Add Products</h3>
+        <h6  onclick="feedbackPage()" >X</h6>
+   
+        <input type="text" name="" id="name" placeholder="Product Page">
+       <input type="text" id="productid" placeholder="product id" >
+       <input type="url" id="link" placeholder="img url">
+       <input type="text" id="cat" placeholder="catogary">
+       <input type="text" id="rate" placeholder="rating">
+       <input type="number" id="rate" placeholder="price">
+
+        <button class="btn8" onclick="massage()">ADD PRODUCT</button>
+        
+    </div>
+   
+   
+   
+   
             <h1>Dashboard</h1>
             <div class="dates">
                 <input type="date">
@@ -241,7 +261,7 @@
                 <a href="#" class="normal">Show all</a>
             </div>
         </main>
-        <!--end of main-->
+        <!--end of main-------------------------------------------------------------------------------------->
         <div class="right">
             <div class="top">
                 <button id="menu-btn">
@@ -250,16 +270,12 @@
                         </span>
                 </button>
 <div class="theme-toggler">
-    <span class="material-symbols-sharp">
-        light_mode
-        </span>
-        <span class="material-symbols-sharp">
-            dark_mode
-            </span>
+    <span class="material-symbols-sharp active">light_mode</span>
+        <span class="material-symbols-sharp dark">dark_mode</span>
 </div>
 <div class="profile">
 <div class="profile-name">
-    <p>Hey! <b>Sriram</b></p>
+    <p>Hey<b>Sriram</b></p>
     <small class="text-muted">Admin</small>
 </div>
 <div class="profile-pic">
@@ -278,14 +294,81 @@
                         <div class="message"><p class="text-muted"><b style="color:black">
                             Faizen
                         </b>,made the responsivness of project</p>
-                        <small class="text-muted">1 week ago</small>
+                        <small class="text-muted">2 miutes ago</small>
+                    </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-pic">
+                            <img src="./images/Mujaheed.jpg" alt="">
+                        </div>
+                        <div class="message"><p class="text-muted"><b style="color:black">
+                            Mujaheed
+                        </b>,made the login and logout and cart of project</p>
+                        <small class="text-muted"> 10 minutes ago</small>
+                    </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-pic">
+                            <img src="./images/pranav.jpg" alt="">
+                        </div>
+                        <div class="message"><p class="text-muted"><b style="color:black">
+                            Pranav
+                        </b>,made the  of prduct page of project</p>
+                        <small class="text-muted">2 minutes ago</small>
+                    </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-pic">
+                            <img src="./images/Deepak.png" alt="">
+                        </div>
+                        <div class="message"><p class="text-muted"><b style="color:black">
+                           Deepak 
+                        </b>,Team lead and made paymentpage</p>
+                        <small class="text-muted">5 minutes ago</small>
                     </div>
                     </div>
                 </div>
             </div>
+
+            <div class="sales-analytics">
+                <h2>Sales Analytics</h2>
+                <div class="itemonline">
+                    <div class="icon">
+                        <span class="material-symbols-sharp">
+                            shopping_cart
+                            </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Online Orders</h3>
+                            <small class="text-muted">Last 24 hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+               
+                <div class="itemonline">
+                    <div class="icon">
+                        <span class="material-symbols-sharp">
+                            person
+                            </span>
+                       
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>New Customers</h3>
+                            <small class="text-muted">Last 24 hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>839</h3>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-
+    <script src="Admin.js"></script>
 </body>
 </html>

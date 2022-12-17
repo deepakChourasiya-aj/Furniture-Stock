@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#dee_toppart{
+    height: 20vh;
+    border: 2px solid salmon;
+}
+.dee_main_bgc img{
+    width: 100%;
+}
+#dee_popularstyles{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 70%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#dee_para{
+    /* width: 65%; */
+margin: auto;
+font-size: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+line-height: 1.2;
+letter-spacing: 0.01em;
+}
+.dee_cardPart{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 85%;
+    justify-content:space-evenly ;
+    margin: auto;
+    gap: 40px;
+
+}
+.dee_cardPart img{
+width: 100%;
+}
+#dee_text h1{
+    padding: 10px;
+}
+#dee_text {
+    padding-top: 10px;
+}
+#dee_shop{
+    color: skyblue;
+}
+/*  */
+#dee_imgsize{
+
+    border-radius: 50% ;
+    width: 50%;
+}
+.carousel-inner{
+    display: flex;
+}
+.dee_flex{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.dee_bottompart{
+    text-align: center;
+    margin-top: 15vh;
+}
+.dee_bottompart h1{
+    /* text-align: center; */
+    margin: 7vh;
+    font-size: 50px;
+}
+
+@media  screen and (min-width:450px) and (max-width:550px) {
+    .dee_cardPart{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: auto;
+        margin: auto;
+        
+    }
+    .dee_flex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        width: auto;
+    }
+    .carousel-inner{
+      width: auto;
+      /* height: 70vh; */
+    }
+    .carousel-inner>div>img{
+        height: 80vh;
+    }
+
+}
+@media  screen and (min-width:551px) and (max-width:850px) {
+    .dee_cardPart{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: auto;
+        margin: auto;
+        
+    }
+    .dee_flex{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: auto;
+        width: auto;
+    }
+    .carousel-inner{
+      width: auto;
+      /* height: 70vh; */
+    }
+    .carousel-inner>div>img{
+        height: 90vh;
+    }
+
+}
+
