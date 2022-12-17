@@ -1,0 +1,82 @@
+:root{
+    --body:#8c6eff;
+    --cont:#eceff1;
+    --line:#651fff;
+    --text:#007bfd;
+    --light:#c5cae9;
+
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+}
+.dee_tracking_container{
+  width: 1100px;  
+  max-width: 100%;
+  padding: 40px;
+  margin: 0 30px;
+  background:var(--cont);
+  position:relative;
+}
+.dee_details{
+display: flex;
+gap: 1em;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.ordersdee span{
+    text-transform: uppercase;
+}
+.ordersdee h1{
+    text-transform: uppercase;
+}
+.ordersdee span{
+    color: var(--txt);
+}
+.orderdate p{
+    font-size: 1.1rem;
+}
+.track {
+    display: flex;
+}
+.track{
+ margin: 4em 0 8em;
+}
+#progress_dee{
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+}
+#progress_dee li{
+    width: 50%;
+    position: relative;
+}
+#progress_dee li::before{
+    content: '\2713';
+    position: absoulte;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    align-items: center;
+    height: 50px;
+    background:var(--line);
+    color: #fff;
+    border-radius: 50%;
+    z-index: 11111;
+
+}
