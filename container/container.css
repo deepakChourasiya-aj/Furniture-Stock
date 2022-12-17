@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-
+    background-color: rgb(240,248,255);
 }
 body::-webkit-scrollbar {
     display: none;

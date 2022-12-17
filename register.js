@@ -1,4 +1,6 @@
-import { navbar } from "./index.js";
+import { navbar } from "./function.js";
+
+console.log(navbar)
 const registerForm = document.getElementById("register-form");
 let usersDetails = JSON.parse(localStorage.getItem("users-details")) || [];
 
@@ -35,6 +37,7 @@ registerForm.addEventListener("submit", (e)=>{
 let newbavbar =document.querySelector('#navbarstag')
 
 
-newbavbar.innerHTML= navbar()
+newbavbar.innerHTML= navbar();
 
-console.log(newbavbar);
+// console.log(newbavbar);
+
