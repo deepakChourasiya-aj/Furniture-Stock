@@ -43,13 +43,15 @@ function produtrender(data){
        let pi = document.createElement("img");
        pi.src=el.img;
    
-       let price = document.createElement("h3");
-       price.innerText=`Sale INR:-`+" "+el.price;
-       price.style.color="red";
-       price.style.marginTop="10px";
+       let price = document.createElement("h2");
+       price.innerText=`Sale INR:-`+" "+"₹"+" "+el.price;
+    
 
-       let dec = document.createElement("h4");
-       dec.innerText=el.item;
+       let star = document.createElement("diV");
+       star.innerText=el.star;
+
+       let dec = document.createElement("h3");
+       dec.innerText=el.item.substring(0,70)+"...";
        
 
        let addcart = document.createElement("button");
@@ -70,7 +72,7 @@ function produtrender(data){
        btn_div2.append(addcart);
        btn_div3.append(display);
        btn_div1.append(btn_div2,btn_div3)
-       div.append(pi,dec,price,btn_div1);
+       div.append(pi,dec,price,star,btn_div1,);
        cont.append(div);
        side.append(cont)
     })
@@ -145,10 +147,27 @@ function filterbyprice(data,value){
         
         
      }
-    
+
      produtrender(data2);
     })
 }
+
+let rating_sort = document.querySelector("#rating_sort");
+rating_sort.addEventListener("change",function(){
+    let rating_value = document.querySelector(".filter_pri6").value;
+    filterByRating(data,rating_value);
+})
+
+function filterByRating(data,rating_value){
+    let data3=[];
+    data.filter((el)=>{
+        if(Math.floor(el.rating%10) == rating_value){
+            return(data3.push(el));
+        }
+        produtrender(data3);
+    })
+}
+
 
 
 function addtocart(el){
