@@ -663,22 +663,31 @@
   },
   "cartproducts": [
     {
-      "id": 66,
-      "category": "outdoor",
-      "item": "4-pc. Black Wicker Cord Patio Conversation Set",
-      "price": 35000,
-      "rating": 4.3,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/2235a7e443d660492ff8bf70bae67dff16197ef5/4-piece-Black-Wicker-Cord-Patio-Furniture-Sofa-Conversation-Set.jpg?imwidth=480&impolicy=medium",
-      "description": "Made of durable powder-coated steel wrapped in weather-resistant PE cords, this set is descriptionigned to last outside. A coffee table with a sleek black glass top completes the set's chic look."
+      "id": 45,
+      "category": "Electric",
+      "item": "Honeywell TH6220WF2006/U Lyric T6 Pro Wi-Fi Programmable Thermostat",
+      "price": 1299,
+      "rating": 4.2,
+      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/e18247a6dfb7a39a5af7cf8221f8710cd5b3ec1e/Honeywell-TH6220WF2006-U-Lyric-T6-Pro-Wi-Fi-Programmable-Thermostat.jpg?imwidth=480&impolicy=medium",
+      "description": "The T Series programmable thermostat streamlines everything from product selection and installation to customer service and support."
     },
     {
-      "id": 67,
+      "id": 46,
+      "category": "Electric",
+      "item": "Wall Light Sconce, Burnished Brass and Matte Black Finish",
+      "price": 1699,
+      "rating": 2.9,
+      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/11fe79b319da202eb4fd45f81164a8f5180a6a1e/Wall-Light-Sconce%2C-Burnished-Brass-and-Matte-Black-Finish.jpg",
+      "description": "Product details The timeless Globe Electric Wall Sconce is the perfect accessory. With a stunning Burnished brass finish and bowl shade, this metallic wall sconce brings a vintage industrial feel to any room."
+    },
+    {
+      "id": 64,
       "category": "outdoor",
-      "item": "Sherwood Outdoor Club Chairs (Set of 2) by Christopher Knight Home",
-      "price": 45000,
-      "rating": 5,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/4576477860adba7a3c47d80ba83b7639eb9f8131/Sherwood-Outdoor-Acacia-Club-Chairs-with-Cushions-%28Set-of-2%29-by-Christopher-Knight-Home.jpg",
-      "description": "Update your patio area with this set of two acacia club chairs from the Christopher Knight Home collection. This club chair incorporates wide, angled seating with a solid,"
+      "item": "Ovios 3-piece Rattan Wicker Rocking Swivel Chair Set",
+      "price": 15000,
+      "rating": 4.2,
+      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/e052ad3ef748b1d5a9c3f10f7e9c04e9d47b7a86/Ovios-3-piece-Rattan-Wicker-Rocking-Swivel-Chair-Set.jpg",
+      "description": "Add to your patio area with this 3-piece rattan wicker swivel chair set. This set comes with thick sponge seat cushions and back cushions for more comfort and relaxation. This upgraded swivel modern chair with arms can spin 360 degrees."
     }
   ]
 }
