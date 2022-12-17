@@ -1,4 +1,6 @@
-import { navbar } from "./index.js";
+import { navbar } from "./function.js";
+
+console.log(navbar)
 const registerForm = document.getElementById("register-form");
 let usersDetails = JSON.parse(localStorage.getItem("users-details")) || [];
 let usersApi = "http://localhost:3000/api/users";
@@ -50,6 +52,7 @@ async function addUser(registerdData){
         alert("error");
     }
 }
+
 
 
 

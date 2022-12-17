@@ -159,3 +159,4 @@ function addtocart(el){
   alert("produt addded to cart")
   
 }
+
