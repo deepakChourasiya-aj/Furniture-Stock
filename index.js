@@ -144,7 +144,9 @@ console.log(footer)
 footertag.innerHTML= footer();
 
 // navbar()
-
+function moveNext(){
+    window.location.href = "product.html";
+}
 
 
 

@@ -53,7 +53,9 @@ async function addUser(registerdData){
     }
 }
 
-
+let registerpage = document.querySelector('#navbarstag');
+console.log(navbar());
+registerpage.innerHTML= navbar();
 
 
 

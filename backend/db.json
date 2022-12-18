@@ -689,5 +689,27 @@
       "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/e052ad3ef748b1d5a9c3f10f7e9c04e9d47b7a86/Ovios-3-piece-Rattan-Wicker-Rocking-Swivel-Chair-Set.jpg",
       "description": "Add to your patio area with this 3-piece rattan wicker swivel chair set. This set comes with thick sponge seat cushions and back cushions for more comfort and relaxation. This upgraded swivel modern chair with arms can spin 360 degrees."
     }
+  ],
+  "shippingaddress": [
+    {
+      "email": "deepak@gmail.comd",
+      "firstname ": "deepak",
+      "address_1": "Main road kkb",
+      "address_2": "mainroad",
+      "country": "IND",
+      "city": "mumbai",
+      "phoneno": "07999764766",
+      "id": 1
+    },
+    {
+      "email": "aman@gmail.comd",
+      "firstname ": "Abhay",
+      "address_1": "Main road kkb",
+      "address_2": "mainroad",
+      "country": "IND",
+      "city": "mumbai",
+      "phoneno": "07999764766",
+      "id": 2
+    }
   ]
 }

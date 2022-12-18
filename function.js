@@ -17,13 +17,15 @@ export  function navbar(){
 <div class="icondiv">
 
             <a href="/register-login.html"><i class="fa fa-thin fa-user"></i></a>
-            <a href=""><i class="fa fa-light fa-heart"></i></a>
-            <a href=""><i class="fa fa-thin fa-cart-shopping"></i></a>
+            <a href="/cart.html"><i class="fa fa-light fa-heart"></i></a>
+            <a href="/cart.html"><i class="fa fa-thin fa-cart-shopping"></i></a>
 
 
 </div>
 
-<button id="checkbtn">Chekout</button>
+<a href="/dee_Billing_Address.html"><button  id="checkbtn">Chekout</button>
+</a>
+
 </section>
 
 <!-- bottom -->
@@ -66,4 +68,5 @@ export  function navbar(){
     `
 
 }
+
 
