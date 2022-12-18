@@ -14,10 +14,10 @@ DELETE  http://localhost:3000/api/todos/18
 
 
 ### 
-GET http://localhost:3000/api/users
+GET http://localhost:3000/api/cartproducts
 
 ###
-POST http://localhost:3000/api/users
+POST http://localhost:3000/api/cartproducts
 Content-Type: application/json
 
 {

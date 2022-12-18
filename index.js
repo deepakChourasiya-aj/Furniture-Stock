@@ -134,7 +134,12 @@
 
 
 //     `
+import { navbar } from "./function.js";
+let navbarertag = document.querySelector('#togsnav')
 
+
+console.log(navbar)
+navbarertag.innerHTML= navbar();
 
 import { footer } from "./footer.js";
 let footertag = document.querySelector('.footer-sec')
@@ -142,6 +147,11 @@ let footertag = document.querySelector('.footer-sec')
 
 console.log(footer)
 footertag.innerHTML= footer();
+import { navbar } from "./function.js";
+let navbartag = document.querySelector('#togsnav')
+
+console.log(navbar)
+navbartag.innerHTML= navbar();
 
 // navbar()
 function moveNext(){
