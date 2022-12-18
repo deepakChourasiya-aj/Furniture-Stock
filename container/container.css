@@ -21,7 +21,6 @@ body::-webkit-scrollbar {
 
 /* deals_product */
 
-
 #main_deals{
     position: absolute;
     top: 105vh;
@@ -75,6 +74,7 @@ body::-webkit-scrollbar {
 
 .delsanc{
     position: relative;
+    top: 25px;
     left: -50px;
 
 }
