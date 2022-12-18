@@ -638,7 +638,8 @@
       "email": "mrmujaheed13@gmail.com",
       "password": "1234",
       "phone": "7993688315",
-      "id": 1
+      "id": 1,
+      "place": "india"
     },
     {
       "firstname": "Admin",
@@ -646,17 +647,10 @@
       "email": "admin@furniturestock.com",
       "password": "admin",
       "phone": "1234567890",
-      "id": 2
-    },
-    {
-      "firstname": "user2",
-      "lastname": "name",
-      "email": "mujaheedsami13@gmail.com",
-      "password": "1234",
-      "phone": "1234567890",
-      "place": "india",
-      "id": 3
+      "id": 2,
+      "place": "india"
     }
+  
   ],
   "loggedinuser": {
     "name": "name",

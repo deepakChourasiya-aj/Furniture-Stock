@@ -1,3 +1,4 @@
+
 document.querySelector(".theme-toggler .dark").addEventListener("click",function(){
 let cont=document.querySelector(".container")
 cont.style.backgroundColor="black";
@@ -58,5 +59,13 @@ function feedbackPage(){
     }
     else{
         x2.style.display="none"
-    }
+    }
 }
+
+
+
+
+
+// jhfgbdfjgkdjbgvdh
+
+
