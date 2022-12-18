@@ -1,3 +1,8 @@
+
+import { navbar} from "./function.js";
+import { footer } from "./footer.js";
+console.log(footer)
+
 let userLoggedIn = localStorage.getItem("user-logged-in");
 let cartProducts = JSON.parse(localStorage.getItem("cart-products")) || [];
 const cart = document.getElementById("cart");
@@ -210,3 +215,17 @@ function totalItems(n){
 // }
 
 
+
+let navtags = document.querySelector('#navbars')
+
+navtags.innerHTML= navbar();
+
+
+
+// footer
+
+let footertag = document.querySelector('#footerarea')
+
+
+// console.log(footer)
+footertag.innerHTML= footer();
