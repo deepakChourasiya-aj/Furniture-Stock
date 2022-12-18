@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Products</title>
     <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); </style>
     <!--stylesheet-->
     <link rel="stylesheet" href="Admin.css">
@@ -26,19 +26,19 @@
 
             </div>
             <div class="sidebar">
-                <a href="./Admin.html" class="active" >
-                    <span class="material-symbols-sharp" style="color:aliceblue">
+                <a href="Admin.html" id="dash">
+                    <span class="material-symbols-sharp">
                         dashboard
                         </span>
                         <h3 class="dar">Dashboard</h3>
                 </a>
-                <a href="./customers.html" >
+                <a href="#" >
                     <span class="material-symbols-sharp">
                         person
                         </span>
                         <h3 class="dar">Customer</h3>
                 </a>
-                <a href="#">
+                <a href="#" >
                     <span class="material-symbols-sharp">
                         receipt_long
                         </span>
@@ -57,7 +57,7 @@
                         <h3 class="dar">Messages</h3>
                         <span class="message-count">26</span>
                 </a>
-                <a href="./Adminproducts.html">
+                <a href="./Adminproducts.html" class="active">
                     <span class="material-symbols-sharp">
                         inventory
                         </span>
@@ -92,170 +92,46 @@
         </aside>
         <!--end of side bar-->
         <main>
-               
-    <div id="feedback">
+            <div id="feedback">
         
-            <h3 class="dar" onclick="menuitem2()"><span>+</span> Add Products</h3>
-        <h6  onclick="feedbackPage()" >X</h6>
-   
-        <input type="text" name="" id="name" placeholder="Product Page">
-       <input type="text" id="productid" placeholder="product id" >
-       <input type="url" id="link" placeholder="img url">
-       <input type="text" id="cat" placeholder="catogary">
-       <input type="text" id="rate" placeholder="rating">
-       <input type="number" id="rate" placeholder="price">
-
-        <button class="btn8" onclick="massage()">ADD PRODUCT</button>
-        
-    </div>
-   
-   
+                <h3 class="dar" onclick="menuitem2()"><span>+</span> Add Products</h3>
+            <h6  onclick="feedbackPage()" >X</h6>
+       
+            <input type="text" name="" id="name" placeholder="Product Page">
+           <input type="text" id="productid" placeholder="product id" >
+           <input type="url" id="link" placeholder="img url">
+           <input type="text" id="cat" placeholder="catogary">
+           <input type="text" id="rate" placeholder="rating">
+           <input type="number" id="rate" placeholder="price">
+    
+            <button class="btn8" onclick="massage()">ADD PRODUCT</button>
+            
+        </div>   
    
    
-            <h1>Dashboard</h1>
+   
+   
+            <h1>Products</h1>
             <div class="dates">
                 <input type="date">
             </div>
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-symbols-sharp">
-                        insert_chart
-                        </span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Sales</h3>
-                                <h1>₹1,00,000</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx="38" cy="38" r="36"> </circle>
-                                </svg>
-                                <div class="number">
-                                    <p>81%</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                       
-                        <small class="text-muted">
-                        Last 24 Hours
-                        </small>
-                </div>
-                <!--end of sales-->
-                <div class="income">
-                    <span class="material-symbols-sharp">
-                        monitoring
-                        </span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Expenses</h3>
-                                <h1>₹80,000</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx="38" cy="38" r="36"> </circle>
-                                </svg>
-                                <div class="number">
-                                    <p>62%</p>
-                                </div>
-                            </div>
-                          
-                        </div>
-                       
-                        <small class="text-muted">
-                            Last 24 Hours
-                        </small>
-                </div>
-                <!--end of income-->
-                <div class="pro">
-                    <span class="material-symbols-sharp">
-                        stacked_line_chart
-                        </span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Income</h3>
-                                <h1>₹40,000</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx="38" cy="38" r="36"> </circle>
-                                </svg>
-                                <div class="number">
-                                    <p>41%</p>
-                                </div> 
-                            </div>
-                            
-                        </div>
-                        
-                        <small class="text-muted">
-                        Last 24 Hours
-                        </small>
-                </div>
-                <!--end of profit-->
-
-            </div>
+          
             <!--End of insights-->
             <div class="recentorder">
-                <h2>Recent orders</h2>
+                <h2>Registered Customers</h2>
                 <table>
                     <thead>
 <tr>
-    <th>ProductName</th>
-    <th>ProductCode</th>
-    <th>Payment</th>
-    <th>status</th>
-    <th></th>
+    <th>Productid</th>
+    <th>productname</th>
+    <th>productimg</th>
+    <th>price</th>
+    <th>rating</th>
+    <th>Delete</th>
 </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
+                    <tbody id="todata">
+                       
                     </tbody>
                 </table>
                 <a href="#" class="normal">Show all</a>
@@ -368,7 +244,11 @@
             </div>
         </div>
     </div>
+<script src="./adminproducts.js"></script>
+    <script>
+        
 
-    <script src="./Admin.js"></script>
+       
+    </script>
 </body>
 </html>

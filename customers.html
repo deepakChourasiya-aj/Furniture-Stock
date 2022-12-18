@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Customer</title>
     <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); </style>
     <!--stylesheet-->
     <link rel="stylesheet" href="Admin.css">
@@ -26,13 +26,13 @@
 
             </div>
             <div class="sidebar">
-                <a href="./Admin.html" class="active" >
-                    <span class="material-symbols-sharp" style="color:aliceblue">
+                <a href="Admin.html" id="dash">
+                    <span class="material-symbols-sharp">
                         dashboard
                         </span>
                         <h3 class="dar">Dashboard</h3>
                 </a>
-                <a href="./customers.html" >
+                <a href="./customers.html" class="active">
                     <span class="material-symbols-sharp">
                         person
                         </span>
@@ -92,170 +92,46 @@
         </aside>
         <!--end of side bar-->
         <main>
-               
-    <div id="feedback">
+            <div id="feedback">
         
-            <h3 class="dar" onclick="menuitem2()"><span>+</span> Add Products</h3>
-        <h6  onclick="feedbackPage()" >X</h6>
-   
-        <input type="text" name="" id="name" placeholder="Product Page">
-       <input type="text" id="productid" placeholder="product id" >
-       <input type="url" id="link" placeholder="img url">
-       <input type="text" id="cat" placeholder="catogary">
-       <input type="text" id="rate" placeholder="rating">
-       <input type="number" id="rate" placeholder="price">
-
-        <button class="btn8" onclick="massage()">ADD PRODUCT</button>
-        
-    </div>
-   
-   
+                <h3 class="dar" onclick="menuitem2()"><span>+</span> Add Products</h3>
+            <h6  onclick="feedbackPage()" >X</h6>
+       
+            <input type="text" name="" id="name" placeholder="Product Page">
+           <input type="text" id="productid" placeholder="product id" >
+           <input type="url" id="link" placeholder="img url">
+           <input type="text" id="cat" placeholder="catogary">
+           <input type="text" id="rate" placeholder="rating">
+           <input type="number" id="rate" placeholder="price">
+    
+            <button class="btn8" onclick="massage()">ADD PRODUCT</button>
+            
+        </div>   
    
    
-            <h1>Dashboard</h1>
+   
+   
+            <h1>Customer</h1>
             <div class="dates">
                 <input type="date">
             </div>
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-symbols-sharp">
-                        insert_chart
-                        </span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Sales</h3>
-                                <h1>₹1,00,000</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx="38" cy="38" r="36"> </circle>
-                                </svg>
-                                <div class="number">
-                                    <p>81%</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                       
-                        <small class="text-muted">
-                        Last 24 Hours
-                        </small>
-                </div>
-                <!--end of sales-->
-                <div class="income">
-                    <span class="material-symbols-sharp">
-                        monitoring
-                        </span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Expenses</h3>
-                                <h1>₹80,000</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx="38" cy="38" r="36"> </circle>
-                                </svg>
-                                <div class="number">
-                                    <p>62%</p>
-                                </div>
-                            </div>
-                          
-                        </div>
-                       
-                        <small class="text-muted">
-                            Last 24 Hours
-                        </small>
-                </div>
-                <!--end of income-->
-                <div class="pro">
-                    <span class="material-symbols-sharp">
-                        stacked_line_chart
-                        </span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Income</h3>
-                                <h1>₹40,000</h1>
-                            </div>
-                            <div class="progress">
-                                <svg>
-                                    <circle cx="38" cy="38" r="36"> </circle>
-                                </svg>
-                                <div class="number">
-                                    <p>41%</p>
-                                </div> 
-                            </div>
-                            
-                        </div>
-                        
-                        <small class="text-muted">
-                        Last 24 Hours
-                        </small>
-                </div>
-                <!--end of profit-->
-
-            </div>
+          
             <!--End of insights-->
             <div class="recentorder">
-                <h2>Recent orders</h2>
+                <h2>Registered Customers</h2>
                 <table>
                     <thead>
 <tr>
-    <th>ProductName</th>
-    <th>ProductCode</th>
-    <th>Payment</th>
-    <th>status</th>
-    <th></th>
+    <th>UserName</th>
+    <th>userid</th>
+    <th>Email</th>
+    <th>mobile</th>
+    <th>Password</th>
+    <th>Location</th>
 </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
-                        <tr>
-                            <td>chairs</td>
-                            <td>01732</td>
-                            <td>Due</td>
-                            <td class="pending">pending</td>
-                            <td class="normal">Details</td>
-
-                        </tr>
+                       
                     </tbody>
                 </table>
                 <a href="#" class="normal">Show all</a>
@@ -368,7 +244,78 @@
             </div>
         </div>
     </div>
+<script src="./customers.js"></script>
+    <script>
+        
 
-    <script src="./Admin.js"></script>
+        document.querySelector(".theme-toggler .dark").addEventListener("click",function(){
+let cont=document.querySelector(".container")
+cont.style.backgroundColor="black";
+
+
+let dash=document.querySelector(".container main h1")
+dash.style.color="white"
+let top=document.querySelector("aside .sidebar>a .material-symbols-sharp")
+top.style.color="white"
+let side=document.querySelector("aside .sidebar>a")
+side.style.color="white";
+let right=document.querySelector(".right .recent-updates h2")
+right.style.color="white";
+let right1=document.querySelector(".right .sales-analytics h2")
+right1.style.color="white";
+let main=document.querySelector(".container main .recentorder h2")
+main.style.color="white";
+let insight=document.querySelector("main .insights>div ")
+insight.style.boxShadow="0 2rem 3rem rgba(104, 110, 164, 0.18);"
+let top1=document.querySelector(".container .right>.top>.profile>.profile-name>p")
+top1.style.color="white"
+let q=theme-toggler.querySelector("span:nth-child(2)")
+q.style
+})
+
+document.querySelector(".theme-toggler .active").addEventListener("click",function(){
+let cont=document.querySelector(".container")
+cont.style.backgroundColor=" aliceblue";
+let cont1=document.querySelector(".container main h1");
+cont1.style.color="black";
+let main1=document.querySelector(".container main .recentorder h2")
+main1.style.color="black"
+let right3=document.querySelector(".right .recent-updates h2")
+right3.style.color="black";
+let right4=document.querySelector(".right .sales-analytics h2")
+right4.style.color="black";
+let top1=document.querySelector(".container .right>.top>.profile>.profile-name>p")
+top1.style.color="black"
+let side=document.querySelector(".sidebar #dash")
+side.style.color="grey"
+let side1=document.querySelector(".sidebar #dash span")
+side1.style.color="grey"
+})
+
+
+let v= document.getElementById("feedback")
+v.style.display="none"
+
+function menuitem2(){
+    if(v.style.display=="none"){
+        v.style.display="block"
+    }
+    else{
+        v.style.display="none"
+    }
+}
+let x2= document.getElementById("feedback")
+x2.style.display="none"
+
+function feedbackPage(){
+    if(x2.style.display=="none"){
+        x2.style.display="flex"
+    }
+    else{
+        x2.style.display="none"
+    }
+}
+
+    </script>
 </body>
 </html>

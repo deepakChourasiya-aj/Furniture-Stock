@@ -522,3 +522,12 @@ main .insights {
     /* box-shadow: inset  0 0 50px 0 black; */
     color: white;
 }
+table>tbody>tr>td>img{
+    width:100%
+}
+#todo{
+    text-align: center;
+}
+#imgsec{
+    width:100px
+}

@@ -638,7 +638,8 @@
       "email": "mrmujaheed13@gmail.com",
       "password": "1234",
       "phone": "7993688315",
-      "id": 1
+      "id": 1,
+      "place": "india"
     },
     {
       "firstname": "Admin",
@@ -646,15 +647,71 @@
       "email": "admin@furniturestock.com",
       "password": "admin",
       "phone": "1234567890",
-      "id": 2
+      "id": 2,
+      "place": "india"
     },
     {
-      "firstname": "user",
-      "lastname": "name",
+      "firstname": "Deepak",
+      "lastname": "chourasiya",
       "email": "user1@gmail.com",
-      "password": "1234",
+      "password": "12345",
       "phone": "1234567890",
-      "id": 3
+      "id": 3,
+      "place": "india"
+    },
+    {
+      "firstname": "Faizan",
+      "lastname": "Mohoomadh",
+      "email": "user2@gmail.com",
+      "password": "12346",
+      "phone": "1234567890",
+      "id": 4,
+      "place": "india"
+    },
+    {
+      "firstname": "Deva",
+      "lastname": "Sriram",
+      "email": "user4@gmail.com",
+      "password": "1238",
+      "phone": "1234567890",
+      "id": 7,
+      "place": "india"
+    },
+    {
+      "firstname": "Bhargav",
+      "lastname": "sai",
+      "email": "user5@gmail.com",
+      "password": "12349",
+      "phone": "1234567890",
+      "id": 11,
+      "place": "india"
+    },
+    {
+      "firstname": "vikass",
+      "lastname": "jaudhan",
+      "email": "user6@gmail.com",
+      "password": "4567",
+      "phone": "1234567890",
+      "id": 8,
+      "place": "india"
+    },
+    {
+      "firstname": "vidhi",
+      "lastname": "sharma",
+      "email": "user7@gmail.com",
+      "password": "4567",
+      "phone": "1234567890",
+      "id": 9,
+      "place": "india"
+    },
+    {
+      "firstname": "Himanshu",
+      "lastname": "Bihar",
+      "email": "user8@gmail.com",
+      "password": "4567",
+      "phone": "1234567890",
+      "id": 10,
+      "place": "india"
     }
   ],
   "loggedinuser": {
