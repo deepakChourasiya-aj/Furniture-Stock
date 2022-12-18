@@ -134,12 +134,13 @@
 
 
 //     `
-import { navbar } from "./function.js";
-let navbarertag = document.querySelector('#togsnav')
+// import { navbar } from "./function.js";
+// console.log(navbar)
+// let navbarertag = document.querySelector('#togsnav')
 
 
-console.log(navbar)
-navbarertag.innerHTML= navbar();
+// console.log(navbar)
+// navbarertag.innerHTML= navbar();
 
 import { footer } from "./footer.js";
 let footertag = document.querySelector('.footer-sec')
@@ -426,3 +427,4 @@ hov_Eff_out.addEventListener('mouseout', function(){
     hov_Eff_out.style.visibility="hidden"
     
 })
+

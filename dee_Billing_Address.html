@@ -581,12 +581,13 @@ padding: 10px;
 </html>
 <script src="dee_billing.js" type="module"></script>
 <script>
-  let dee_price = 100
-  let am = 890000;
+  // let dee_price = 100
+  // let am = 890000;
   let shipCharge = 100
-  function order_Summary(dee_price,shipCharge){
+  let pricedata = JSON.parse(localStorage.getItem('cart-total'));
+  function order_Summary(pricedata,shipCharge){
   let container = document.querySelector('.dee_Summary_card');
-  let total = dee_price+100;
+  let total = pricedata+100;
   return   container.innerHTML= ` 
   <div id="dee_card_img">
       <img src="https://media.istockphoto.com/id/1252556057/vector/furniture-icons.jpg?s=1024x1024&w=is&k=20&c=CyFRZZQmZ1hDB32AXvJCLzgVyR1XzDciHu4T2qwHa1w=" alt="HERO">
@@ -596,12 +597,10 @@ padding: 10px;
      <p>Make your life comfort with furniture stock buy any thing whatever you want</p>
   </div>
   <div id="dee_summary_details">
-      <h3>Price  ${ ':'+ `₹`+' '+dee_price} </h3>
+      <h3>Price  ${ ':'+ `₹`+' '+pricedata} </h3>
       
       <h3>Shipping Charges ${ ':'+ `₹`+' '+shipCharge}</h3> 
-
-      <h3>Total Amount ${':' + '₹' +' '+total}</h3>
-      <h3>Amoutn  ${total} of all the Products ${shipCharge} and grand total is ${total+shipCharge}</h3>
+      <h3>Total Amount  '₹'  ${total+shipCharge} after Discount</h3>
   </div>
   <div class="dee_div_btn">
        <div><a onclick="movenext()" class="btn pay">Proceed to Payment</a></div>
@@ -609,7 +608,7 @@ padding: 10px;
      </div> 
   `
  }
- order_Summary(dee_price,shipCharge);
+ order_Summary(pricedata,shipCharge);
 </script>
 <script>
   function movenext(){
@@ -617,3 +616,5 @@ padding: 10px;
   }
 </script>
 
+
+<!-- hello everyone  -->

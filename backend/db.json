@@ -1,69 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "category": "furniture",
-      "item": "Console Table with Drawers and Shelves",
-      "price": 21000,
-      "rating": 4.3,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/0a0c87c0df7fc9d109678f2eba9423ac72b0482c/The-Gray-Barn-Console-Table-with-Drawers-and-Shelves.jpg?imwidth=480&impolicy=medium",
-      "description": "A perfect way to bring the feel of a coastal retreat to any living space."
-    },
-    {
-      "id": 2,
-      "category": "furniture",
-      "item": "Prepac Hall Tree with Bench and Shoe Storage",
-      "price": 18000,
-      "rating": 4.2,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/1c9c833592a1bad2c3128964af28243f91977e3e/Prepac-Hall-Tree-with-Bench-and-Shoe-Storage.jpg?imwidth=480&impolicy=medium",
-      "description": "Walk into a clean and tidy home by stashing your outdoor gear and accessories inside this hall tree. Sit atop the bench to prepare for the outdoors, and grab a seat when you return home to remove your shoes."
-    },
-    {
-      "id": 3,
-      "category": "furniture",
-      "item": "Copper Grove Aubrieta1 Drawer Chairside End Table with Shelves",
-      "price": 14000,
-      "rating": 4.5,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/692886ca451e4d4ee7d90b9cc670b31c7932bcef/Copper-Grove-Aubrieta-3-tier-Single-drawer-End-Table.jpg?imwidth=480&impolicy=medium",
-      "description": "The Copper Grove Aubrieta1 Drawer Chairside End Table with Shelves is the perfect complement to any home. Featuring a drawer for hidden storage, you can hide away unsightly controls and accessories."
-    },
-    {
-      "id": 4,
-      "category": "furniture",
-      "item": "Moro Handcrafted Modern Cotton Pouf by Christopher Knight Home",
-      "price": 20000,
-      "rating": 3.8,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/9b7b6786b9d07e57f06e96333ad64555cef2a63c/Moro-Handcrafted-Cotton-Pouf-by-Christopher-Knight-Home.jpg",
-      "description": "Live boldly with the ideal statement piece by giving your home this bestseller knitted pouf that offers both comfort and style to any room."
-    },
-    {
-      "id": 5,
-      "category": "furniture",
-      "item": "Carbon Loft Mullis Ashwood Round Double Tier End Table",
-      "price": 3000,
-      "rating": 3.8,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/1fd2b7086693e987721a15b495de05796864f8b4/Carbon-Loft-Mullis-Ashwood-Round-Double-Tier-End-Table.jpg",
-      "description": "Flank your sofa or bed with this stylish round end table. This two-tier end table stands at 24 inches high and is built using metal with two wooden shelves for showcasing decor or storing must-have items close by."
-    },
-    {
-      "id": 6,
-      "category": "furniture",
-      "item": "Preston Floral Fabric Club Chair by Christopher Knight Home",
-      "price": 5000,
-      "rating": 4.3,
-      "img": "https://ak1.ostkcdn.com/images/products/14518502/Preston-Floral-Fabric-Club-Chair-by-Christopher-Knight-Home-48f11f82-a6bc-4660-b0d0-491d295d1759_600.jpg?imwidth=480&impolicy=medium",
-      "description": "Transform any room to a stylish space with comfortable seating with this club chair. Not only does it give your guests a comfortable place to relax and converse, but it is simple enough to allow this chair to be either a staple or an accent piece."
-    },
-    {
-      "id": 7,
-      "category": "furniture",
-      "item": "Preston Floral Fabric Club Chair by Christopher Knight Home",
-      "price": 6000,
-      "rating": 4,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/82d50bbd3b065c90e6cdb66af994d551c2259a72/Upholstered-Single-Lounge-Chair-Accent-Chair.jpg?imwidth=480&impolicy=medium",
-      "description": "his  modern sofa can provide ample seating when guests are over, perfect for a  small space and easy to lay down on for a nap. The cushions you sit on  are nice and firm.  Don't worry about sinking in. So what are you  waiting for?"
-    },
-    {
       "id": 8,
       "category": "furniture",
       "item": "Levine Retro Accent Chair",
@@ -662,25 +599,9 @@
     "userloggedin": true
   },
   "cartproducts": [
-    {
-      "id": 8,
-      "category": "furniture",
-      "item": "Levine Retro Accent Chair",
-      "price": 16000,
-      "rating": 4.9,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/47c1a0a7e36a03dfd973472d712a53b77956a6cc/Levine-Accent-Chair.jpg",
-      "description": "|| Fremont & Park - Levine Collection ||  Perfectly poised to send your living room decor up to the next level, this chair is decidedly distinguished and wonderfully chic.",
-      "quntity": 1
-    },
-    {
-      "id": 11,
-      "category": "rugs",
-      "item": "SAFAVIEH Vision Tanasa Modern Ombre Tonal Rug",
-      "price": 4000,
-      "rating": 4.3,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/e254f19409cc1734699c7a5198fbcfa660d67e67/SAFAVIEH-Vision-Tanasa-Modern-Ombre-Tonal-Rug.jpg",
-      "description": "The Vision Area Rug Collection features sophisticated, soft tone-on-tone area rugs, perfectly styled to energize today's urban-chic contemporary décor.",
-      "Quntity": 1
-    }
+  
+  ],
+  "shippingaddress": [
+
   ]
 }
