@@ -229,10 +229,10 @@ navtags.innerHTML= navbar();
 
 
 
-// footer
+// // footer
 
 let footertag = document.querySelector('#footerarea')
 
 
-// console.log(footer)
+// // console.log(footer)
 footertag.innerHTML= footer();
