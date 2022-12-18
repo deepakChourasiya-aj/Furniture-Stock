@@ -638,8 +638,7 @@
       "email": "mrmujaheed13@gmail.com",
       "password": "1234",
       "phone": "7993688315",
-      "id": 1,
-      "place": "india"
+      "id": 1
     },
     {
       "firstname": "Admin",
@@ -647,20 +646,41 @@
       "email": "admin@furniturestock.com",
       "password": "admin",
       "phone": "1234567890",
-      "id": 2,
-      "place": "india"
+      "id": 2
+    },
+    {
+      "firstname": "user",
+      "lastname": "name",
+      "email": "user1@gmail.com",
+      "password": "1234",
+      "phone": "1234567890",
+      "id": 3
     }
-  
   ],
   "loggedinuser": {
     "name": "name",
     "userloggedin": true
   },
   "cartproducts": [
-
-  ],
-  "shippingaddress": [
-   
-
+    {
+      "id": 8,
+      "category": "furniture",
+      "item": "Levine Retro Accent Chair",
+      "price": 16000,
+      "rating": 4.9,
+      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/47c1a0a7e36a03dfd973472d712a53b77956a6cc/Levine-Accent-Chair.jpg",
+      "description": "|| Fremont & Park - Levine Collection ||  Perfectly poised to send your living room decor up to the next level, this chair is decidedly distinguished and wonderfully chic.",
+      "quntity": 1
+    },
+    {
+      "id": 11,
+      "category": "rugs",
+      "item": "SAFAVIEH Vision Tanasa Modern Ombre Tonal Rug",
+      "price": 4000,
+      "rating": 4.3,
+      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/e254f19409cc1734699c7a5198fbcfa660d67e67/SAFAVIEH-Vision-Tanasa-Modern-Ombre-Tonal-Rug.jpg",
+      "description": "The Vision Area Rug Collection features sophisticated, soft tone-on-tone area rugs, perfectly styled to energize today's urban-chic contemporary décor.",
+      "Quntity": 1
+    }
   ]
 }

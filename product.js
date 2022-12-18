@@ -209,7 +209,7 @@ async function addtocart(el){
          try {
              await fetch(yourcart,{
                 method:"POST",
-                body:JSON.stringify({...el,quntity:1}),
+                body:JSON.stringify({...el,quantity:1}),
                 headers:{
                     "Content-Type":"application/json"
                 }

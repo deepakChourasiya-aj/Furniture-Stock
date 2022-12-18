@@ -272,3 +272,22 @@ body{
 }
 
 
+@media screen and (min-width:200px) and (max-width:599px){
+    .sidebar2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    #procard{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .sidebar1{
+        display: none;
+    }
+    #footer{
+        margin-top: 50px;
+    }
+}
+    
