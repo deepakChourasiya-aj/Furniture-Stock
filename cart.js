@@ -72,6 +72,13 @@ promoBtn.addEventListener("click", ()=>{
    
 })
 
+const checkoutBtn = document.getElementById("checkout-btn");
+checkoutBtn.addEventListener("click", ()=>{
+    let total = document.getElementById("total").innerText;
+    localStorage.setItem("cart-total", total);
+    window.location.href = "dee_Billing_Address.html";
+});
+
 }
 
 
@@ -96,6 +103,14 @@ btn1.addEventListener("click", ()=>{
 
     cart.style.border = "none";
     cart.style.padding = 0;
+
+
+    let a = cartProductsapi.reduce((a, b)=>{
+        return a + Number(b.price) * Number(b.quantity);
+    }, 0);
+
+    document.getElementById("sub-total").innerText = a;
+    document.getElementById("total").innerText = a
 
 
     
@@ -146,23 +161,12 @@ btn1.addEventListener("click", ()=>{
                          <option value="20">20</option>
                      </select>`;
 
-                     
-
-                    document.getElementById("sub-total").innerText = cartProductsapi.reduce((a, b)=>{
-                        return a + b.price*quant.value;
-                     }, 0);
-
-                     let total = document.getElementById("total");
-                     total.innerText = cartProductsapi.reduce((a, b)=>{
-                        return a + b.price*quant.value;
-                     }, 0);;
-
-            // quant.addEventListener("change", ()=>{
-            //     document.getElementById("sub-total").innerText = cartProductsapi.reduce((a, b)=>{
-            //     return a+ b.price*quant.value
-            //  }, 0);
-               
-            // });
+                     quant.value=elem.quantity;
+                quant.addEventListener("change", ()=>{
+                    console.log(elem.id, +quant.value);
+                    changeQuant(elem.id, +quant.value);
+                });
+         
 
 
             let removeBtn = document.createElement("button");
@@ -185,8 +189,6 @@ btn1.addEventListener("click", ()=>{
 }
 
 
-
-
 async function removeElem(id){
     try {
         fetch(`http://localhost:3000/api/cartproducts/${id}`, {
@@ -201,12 +203,17 @@ function totalItems(n){
     document.getElementById("total-items").innerText = `(${n}) Items : `;
 }
 
-// let subT = 0;
-
-// function totalprice(pri){
-//     subT=0;
-//     subT+=pri;
-//     document.getElementById("sub-total").innerText = subT;
-// }
-
+async function changeQuant(id, val){
+    try {
+        fetch(`http://localhost:3000/api/cartproducts/${id}`, {
+            method: "PATCH",
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({quantity: val})
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
 

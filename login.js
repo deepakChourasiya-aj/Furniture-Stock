@@ -34,7 +34,18 @@ let userLoggedIn = false;
 // -----------------------------------------------------------
 
 loginForm.addEventListener("submit", async (e)=>{
+
     e.preventDefault();
+
+    let email = document.getElementById("login-email").value;
+    let password = document.getElementById("login-password").value
+
+    if(email=="admin@furniturestock.com" && password=="admin"){
+        alert("Admin login Sucessful");
+        window.location.href = "Admin.html";
+        return;
+    }
+
     try {
         let res = await fetch("http://localhost:3000/api/users")
         let data = await res.json();
@@ -76,7 +87,9 @@ function userAuth(userData){
         userDetails.userloggedin=true;
         loggedInUser(userDetails);
         // localStorage.setItem("user-logged-in", userLoggedIn);
-        alert("Login Successful");
+        window.location.href = "index.html"
+        alert("Login Successful. Happy Shopping!");
+      
     } else if(emailCheck&& !passCheck){
         alert("Wrong Password")
     } else {
