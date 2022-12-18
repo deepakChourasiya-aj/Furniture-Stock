@@ -1,6 +1,5 @@
-import { navbar } from "./function.js";
+// import { navbar } from "./function.js";
 
-console.log(navbar)
 const registerForm = document.getElementById("register-form");
 let usersDetails = JSON.parse(localStorage.getItem("users-details")) || [];
 let usersApi = "http://localhost:3000/api/users";
@@ -24,7 +23,8 @@ registerForm.addEventListener("submit", (e)=>{
             email,
             password,
             phone,
-            password
+            password,
+            place : "india"
         };
         usersDetails.push(registerdData);
         addUser(registerdData);

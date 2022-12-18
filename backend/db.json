@@ -649,11 +649,12 @@
       "id": 2
     },
     {
-      "firstname": "user",
+      "firstname": "user2",
       "lastname": "name",
-      "email": "user1@gmail.com",
+      "email": "mujaheedsami13@gmail.com",
       "password": "1234",
       "phone": "1234567890",
+      "place": "india",
       "id": 3
     }
   ],
@@ -662,14 +663,6 @@
     "userloggedin": true
   },
   "cartproducts": [
-    {
-      "id": 1,
-      "category": "furniture",
-      "item": "Console Table with Drawers and Shelves",
-      "price": 21000,
-      "rating": 4.3,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/0a0c87c0df7fc9d109678f2eba9423ac72b0482c/The-Gray-Barn-Console-Table-with-Drawers-and-Shelves.jpg?imwidth=480&impolicy=medium",
-      "description": "A perfect way to bring the feel of a coastal retreat to any living space."
-    }
+   
   ]
 }
