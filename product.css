@@ -5,13 +5,13 @@
 
 }
 
-body{
+/* body{
     font-style:oblique;
     font-family: sans-serif;
     font-weight:bolder;
     color: #000000;
     
-}
+} */
 
 /* #navbar{
     display: flex;
@@ -157,9 +157,9 @@ body{
 
 #filter-heading{
     color: rgb(83, 20, 52);
-    font-style: italic;
+    /* font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
+    font-weight: bolder; */
     margin: 20PX;
 }
 
@@ -179,8 +179,8 @@ body{
     align-items: center;
     cursor: pointer;
     display: flex;
-    font-size: 25px;
-    font-weight: 700;
+    /* font-size: 25px;
+    font-weight: 700; */
     justify-content: space-between;
     outline-offset: 0;
     padding: 12px 0;
@@ -210,7 +210,7 @@ body{
     justify-content: center;
     justify-content: space-between;
     display: flex;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     margin: auto;
 }
 
@@ -235,6 +235,7 @@ body{
 
 }
 .pro_img_item h2{
+    font-size: 20px;
     margin-top: 10px;
     color: #ff1d58;
     justify-content: left;
@@ -244,6 +245,7 @@ body{
     margin-top: 10px;
     color: #2d545e;
     justify-content: left;
+    font-size: 20px;
     
 }
 
@@ -272,3 +274,22 @@ body{
 }
 
 
+@media screen and (min-width:200px) and (max-width:599px){
+    .sidebar2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    #procard{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .sidebar1{
+        display: none;
+    }
+    #footer{
+        margin-top: 50px;
+    }
+}
+    

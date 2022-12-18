@@ -599,87 +599,9 @@
     "userloggedin": true
   },
   "cartproducts": [
-    {
-      "id": 5,
-      "category": "furniture",
-      "item": "Carbon Loft Mullis Ashwood Round Double Tier End Table",
-      "price": 3000,
-      "rating": 3.8,
-      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/1fd2b7086693e987721a15b495de05796864f8b4/Carbon-Loft-Mullis-Ashwood-Round-Double-Tier-End-Table.jpg",
-      "description": "Flank your sofa or bed with this stylish round end table. This two-tier end table stands at 24 inches high and is built using metal with two wooden shelves for showcasing decor or storing must-have items close by.",
-      "quantity": 1
-    }
+  
   ],
   "shippingaddress": [
-    {
-      "email": "deepak@gmail.comd",
-      "firstname ": "deepak",
-      "address_1": "Main road kkb",
-      "address_2": "mainroad",
-      "country": "IND",
-      "city": "mumbai",
-      "phoneno": "07999764766",
-      "id": 1
-    },
-    {
-      "email": "aman@gmail.comd",
-      "firstname ": "Abhay",
-      "address_1": "Main road kkb",
-      "address_2": "mainroad",
-      "country": "IND",
-      "city": "mumbai",
-      "phoneno": "07999764766",
-      "id": 2
-    },
-    {
-      "email": "deepak@gmail.comd",
-      "firstname ": "deepak",
-      "address_1": "Main road kkb",
-      "address_2": "mainroad",
-      "country": "IND",
-      "city": "mumbai",
-      "phoneno": "07999764766",
-      "id": 3
-    },
-    {
-      "email": "deepak@gmail.comd",
-      "firstname ": "deepak",
-      "address_1": "Main road kkb",
-      "address_2": "mainroad",
-      "country": "IND",
-      "city": "mumbai",
-      "phoneno": "07999764766",
-      "id": 4
-    },
-    {
-      "email": "aman@gmail.comd",
-      "firstname ": "Abhay",
-      "address_1": "Main road kkb",
-      "address_2": "mainroad",
-      "country": "IND",
-      "city": "mumbai",
-      "phoneno": "07999764766",
-      "id": 5
-    },
-    {
-      "email": "aman@gmail.comd",
-      "firstname ": "Abhay",
-      "address_1": "Main road kkb",
-      "address_2": "mainroad",
-      "country": "IND",
-      "city": "mumbai",
-      "phoneno": "07999764766",
-      "id": 6
-    },
-    {
-      "email": "aman@gmail.comd",
-      "firstname ": "Abhay",
-      "address_1": "Main road kkb",
-      "address_2": "mainroad",
-      "country": "IND",
-      "city": "mumbai",
-      "phoneno": "07999764766",
-      "id": 7
-    }
+
   ]
 }
