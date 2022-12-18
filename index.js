@@ -134,7 +134,12 @@
 
 
 //     `
+import { navbar } from "./function.js";
+let navbarertag = document.querySelector('#togsnav')
 
+
+console.log(navbar)
+navbarertag.innerHTML= navbar();
 
 import { footer } from "./footer.js";
 let footertag = document.querySelector('.footer-sec')
