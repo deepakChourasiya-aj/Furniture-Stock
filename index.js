@@ -154,7 +154,9 @@ console.log(navbar)
 navbartag.innerHTML= navbar();
 
 // navbar()
-
+function moveNext(){
+    window.location.href = "product.html";
+}
 
 
 

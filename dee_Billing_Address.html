@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto:wght@100&display=swap'); </style>
+    <!-- <link rel="stylesheet" href="navcss/navbar.css"> -->
+    <!-- <link rel="stylesheet" href="container/container.css"> -->
+    <!-- <link rel="stylesheet" href="footer/footer.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
     <title>dee_Billing_Address</title>
   </head>
   <style>
+    body{
+      font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    }
     /* css for the logo  */
     .dee_logo {
       margin: auto;
@@ -55,26 +73,31 @@
     .dee_billing_shipping{
         width: 90%;
         display: flex;
-        flex-wrap: wrap;
+       flex-wrap: wrap;
         margin: auto;
         margin-top: 30px;
         margin-bottom: 5%;
         justify-content: space-around;
+        padding: 5px;
+        /* border: 2px solid green; */
     }
     .dee_billing_shipping>div{
-      border: 2px solid rgb(209, 200, 200);
+      border: 3px solid #000000;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
     .dee_billing_shipping input{
         width: 245px;
         padding: 4px;
+        margin: 3px;
     }
     .dee_billing_shipping label{
         padding-right: 30px;
     }
     #dee_billstyle {
         display: block;
-        padding-top: 3px ;
-        padding-bottom: 3px ;
+        /* padding-top: 3px ; */
+        padding: 5px;
+        /* padding-bottom: 3px ; */
         margin-bottom: 10px;
         font-size: larger;
         background-color: rgb(230, 209, 171);
@@ -108,24 +131,26 @@
         border-radius: 10px;
     }
     #dee_submit_details{
-      background-color: skyblue;
+      background-color: #776cf1;
       border:none;
-      padding: 5px;
       font-size: 15px ;
       border-radius: 17px;
-    color: white;
+       color: white;
       font-weight: bold;
+      margin-top: 33px;
+    padding: 10px;
     }
     #dee_submit_details1{
-      background-color: skyblue;
+      background-color: #776cf1;
       border:none;
-      padding: 5px;
       margin-top: 20px;
       border-radius: 17px;
     color: white;
     margin-top: 57px;
       font-size: 15px ;
       font-weight: bold;
+      margin-top: 62px;
+    padding: 10px;
     }
     /* .dee_div_btn >div {
      display: grid;
@@ -179,6 +204,9 @@ padding: 10px;
      display: grid;
      grid-template-columns: repeat(1,1rf);
     } */
+    dee_div_btn{
+
+    }
     .btn  {
 width: 25%;
 background-color: #776cf1;
@@ -212,6 +240,7 @@ padding: 10px;
     #dee_summary_details{
         text-align: left;
         padding-left: 77px;
+        margin: 24px;
     }
  
     .btn:hover{
@@ -223,19 +252,14 @@ padding: 10px;
     }
  }
 
- @media alla and (min-width: 100px) and (max-width:450px){
-  .dee_billing_shipping{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-  }
- }
+
   </style>
   <body>
     <!-- <h1>hi everyone</h1> -->
     <!-- logo part -->
     <div class="dee_logo">
-      <img src="furniturefinallogo.png" alt="logo" />
+      <!-- <img  src="furniturefinallogo.png" alt="logo" /> -->
+      <a href="index.html"><img  src="furniturefinallogo.png" alt="logo" /></a>
     </div>
 
     <!-- border part -->
@@ -271,7 +295,7 @@ padding: 10px;
                 <label for="dee_email"><b>Email</b></label>
               </td>
               <td>
-                <input type="email" id="dee_email" name="dee_email" />
+                <input type="email"  placeholder="Email..." id="dee_email" name="dee_email" />
               </td>
             </tr>
             <tr>
@@ -279,7 +303,7 @@ padding: 10px;
                 <label for="dee_fname"><b>First Name</b></label>
               </td>
               <td>
-                <input type="text" id="dee_fname" name="fname" />
+                <input type="text" placeholder=" First Name..."  id="dee_fname" name="fname" />
               </td>
             </tr>
             <tr>
@@ -287,7 +311,7 @@ padding: 10px;
                 <label for="dee_lname"><b>Last Name</b></label>
               </td>
               <td>
-                <input type="text" id="dee_lname" name="lname" />
+                <input type="text" placeholder="Last Name..." id="dee_lname" name="lname" />
               </td>
             </tr>
             <tr>
@@ -295,7 +319,7 @@ padding: 10px;
                 <label for="dee_company">Company</label>
               </td>
               <td>
-                <input type="text" id="dee_company" name="dee_company" />
+                <input type="text" placeholder="Company..." id="dee_company" name="dee_company" />
               </td>
             </tr>
             <tr>
@@ -303,7 +327,7 @@ padding: 10px;
                 <label for="dee_taxID">Tax ID</label>
               </td>
               <td>
-                <input type="text" id="dee_taxID" name="dee_taxID" />
+                <input type="text"placeholder="Tax ID..."  id="dee_taxID" name="dee_taxID" />
               </td>
             </tr>
             <tr>
@@ -311,7 +335,7 @@ padding: 10px;
                 <label for="dee_Address1"><b>Address Line 1</b></label>
               </td>
               <td>
-                <input type="text" id="dee_Address1" name="dee_Address1" />
+                <input type="text" placeholder="Address Line 1..." id="dee_Address1" name="dee_Address1" />
               </td>
             </tr>
             <tr>
@@ -319,7 +343,7 @@ padding: 10px;
                 <label for="dee_Address2">Address Line 2</label>
               </td>
               <td>
-                <input type="text" id="dee_Address2" name="dee_Address2" />
+                <input type="text" placeholder="Address Line 2..." id="dee_Address2" name="dee_Address2" />
               </td>
             </tr>
             <tr>
@@ -351,7 +375,7 @@ padding: 10px;
                 <label for="dee_city"><b>City</b></label>
               </td>
               <td>
-                <input type="text" id="dee_city" name="dee_city" />
+                <input type="text" placeholder="'City..." id="dee_city" name="dee_city" />
               </td>
             </tr>
             <tr>
@@ -359,7 +383,7 @@ padding: 10px;
                 <label for="dee_state">State </label>
               </td>
               <td>
-                <input type="text" id="dee_state" name="dee_state" />
+                <input type="text" placeholder="State..." id="dee_state" name="dee_state" />
               </td>
             </tr>
             <tr>
@@ -367,7 +391,7 @@ padding: 10px;
                 <label for="dee_ZIP">ZIP Code </label>
               </td>
               <td>
-                <input type="text" id="dee_ZIP" name="dee_ZIP" />
+                <input type="text" placeholder="ZIP Code..." id="dee_ZIP" name="dee_ZIP" />
               </td>
             </tr>
             <tr>
@@ -375,7 +399,7 @@ padding: 10px;
                 <label for="dee_Phone"><b>#Phone</b> </label>
               </td>
               <td>
-                <input type="text" id="dee_Phone" name="dee_Phone" />
+                <input type="text" placeholder="Phone..." id="dee_Phone" name="dee_Phone" />
               </td>
             </tr>
             <!-- ================================================== -->
@@ -383,7 +407,7 @@ padding: 10px;
             <div id="formdatadiv">
               <tr>
                 <td> 
-                  <input type="submit" id="dee_submit_details1">
+                  <input type="submit" placeholder="..." id="dee_submit_details1">
                 </td>
                </tr> 
             </div>
@@ -404,7 +428,7 @@ padding: 10px;
                 <label for="dee_email"><b>Email</b></label>
               </td>
               <td>
-                <input type="email" id="dee_email2" name="dee_email" />
+                <input type="email" placeholder="Email..." id="dee_email2" name="dee_email" />
               </td>
             </tr>
             <tr>
@@ -412,7 +436,7 @@ padding: 10px;
                 <label for="dee_fname"><b>First Name</b></label>
               </td>
               <td>
-                <input type="text" id="dee_fname2" name="fname" />
+                <input type="text" placeholder="First Name..." id="dee_fname2" name="fname" />
               </td>
             </tr>  
             <tr>
@@ -420,7 +444,7 @@ padding: 10px;
                 <label for="dee_lname"><b>Last Name</b></label>
               </td>
               <td>
-                <input type="text" id="dee_lname" name="lname" />
+                <input type="text" placeholder="Last Name..." id="dee_lname" name="lname" />
               </td>
             </tr>
             <tr>
@@ -428,7 +452,7 @@ padding: 10px;
                 <label for="dee_company">Company</label>
               </td>
               <td>
-                <input type="text" id="dee_company" name="dee_company" />
+                <input type="text" placeholder="Company..." id="dee_company" name="dee_company" />
               </td>
             </tr>
             <tr>
@@ -436,7 +460,7 @@ padding: 10px;
                 <label for="dee_taxID">Tax ID</label>
               </td>
               <td>
-                <input type="text" id="dee_taxID" name="dee_taxID" />
+                <input type="text" placeholder="Tax ID..." id="dee_taxID" name="dee_taxID" />
               </td>
             </tr>
             <tr>
@@ -444,7 +468,7 @@ padding: 10px;
                 <label for="dee_Address1"><b>Address Line 1</b></label>
               </td>
               <td>
-                <input type="text" id="dee_Address12" name="dee_Address1" />
+                <input type="text" placeholder="Address Line 1..." id="dee_Address12" name="dee_Address1" />
               </td>
             </tr>
             <tr>
@@ -452,7 +476,7 @@ padding: 10px;
                 <label for="dee_Address2">Address Line 2</label>
               </td>
               <td>
-                <input type="text" id="dee_Address22" name="dee_Address2" />
+                <input type="text" placeholder="Address Line 2..." id="dee_Address22" name="dee_Address2" />
                 <p id="dee_address_line_para"> 	
                   We cannot ship to PO box, APO or FPO addresses.</p>
               </td>
@@ -463,7 +487,7 @@ padding: 10px;
               </td>
               <td>
                 <!-- <input type="text" id="dee_country" name="dee_country" /> -->
-                <select name="countries" id="dee_country2">
+                <select name="countries" placeholder="..." id="dee_country2">
                     <option value="IND">India</option>
                     <option value="RS">Russia</option>
                     <option value="USA">USA</option>
@@ -486,7 +510,7 @@ padding: 10px;
                 <label for="dee_city"><b>City</b></label>
               </td>
               <td>
-                <input type="text" id="dee_city2" name="dee_city" />
+                <input type="text" placeholder="City..." id="dee_city2" name="dee_city" />
               </td>
             </tr>
             <tr>
@@ -494,7 +518,7 @@ padding: 10px;
                 <label for="dee_state">State </label>
               </td>
               <td>
-                <input type="text" id="dee_state2" name="dee_state" />
+                <input type="text" placeholder="State..." id="dee_state2" name="dee_state" />
               </td>
             </tr>
             <tr>
@@ -502,7 +526,7 @@ padding: 10px;
                 <label for="dee_ZIP">ZIP Code </label>
               </td>
               <td>
-                <input type="text" id="dee_ZIP2" name="dee_ZIP" />
+                <input type="text" placeholder="ZIP Code ..." id="dee_ZIP2" name="dee_ZIP" />
               </td>
             </tr>
             <tr>
@@ -510,12 +534,12 @@ padding: 10px;
                 <label for="dee_Phone"><b>#Phone </b> </label>
               </td>
               <td>
-                <input type="text" id="dee_Phone2" name="dee_Phone" />
+                <input type="text" placeholder="Phone..." id="dee_Phone2" name="dee_Phone" />
               </td>
             </tr>
             <tr>
               <td>
-                <input type="submit" id="dee_submit_details" >
+                <input type="submit"  id="dee_submit_details" >
               </td>
             </tr>
           </form>
@@ -539,24 +563,30 @@ padding: 10px;
               <h5> </h5>
           </div>
          <div class="dee_div_btn">
-           <div><a class="btn pay">Proceed to Payment</a></div>
+           <div><a href="Payment.html" class="btn pay">Proceed to Payment</a></div>
            <!-- <div><a   class="btncancel">Cancel Order</a></div> -->
          </div>
   
       </div>
       <!-- timing -->
       <div class="dee_Summary_card">
- 
+       
 
       </div>
+
+      <footer id="faizan_footer">
+          
+      </footer>
   </body>
 </html>
-<script src="dee_billing.js"></script>
+<script src="dee_billing.js" type="module"></script>
 <script>
+  let dee_price = 100
   let am = 890000;
-  let shipCharge = 10000
-  function order_Summary(am){
+  let shipCharge = 100
+  function order_Summary(dee_price,shipCharge){
   let container = document.querySelector('.dee_Summary_card');
+  let total = dee_price+100;
   return   container.innerHTML= ` 
   <div id="dee_card_img">
       <img src="https://media.istockphoto.com/id/1252556057/vector/furniture-icons.jpg?s=1024x1024&w=is&k=20&c=CyFRZZQmZ1hDB32AXvJCLzgVyR1XzDciHu4T2qwHa1w=" alt="HERO">
@@ -566,16 +596,23 @@ padding: 10px;
      <p>Make your life comfort with furniture stock buy any thing whatever you want</p>
   </div>
   <div id="dee_summary_details">
-      <h3>Total Amount  ${ ':'+ `$`+' '+am} </h3>
-      <h3>Shipping Charges ${ ':'+ `$`+' '+shipCharge}</h3>
-      <h5> </h5>
+      <h3>Price  ${ ':'+ `₹`+' '+dee_price} </h3>
+      
+      <h3>Shipping Charges ${ ':'+ `₹`+' '+shipCharge}</h3> 
+
+      <h3>Total Amount ${':' + '₹' +' '+total}</h3>
+      <h3>Amoutn  ${total} of all the Products ${shipCharge} and grand total is ${total+shipCharge}</h3>
   </div>
   <div class="dee_div_btn">
-       <div><a class="btn pay">Proceed to Payment</a></div>
+       <div><a onclick="movenext()" class="btn pay">Proceed to Payment</a></div>
 
-  
      </div> 
   `
  }
- order_Summary(am,shipCharge);
+ order_Summary(dee_price,shipCharge);
+</script>
+<script>
+  function movenext(){
+    window.location.href="Payment.html"
+  }
 </script>

@@ -57,42 +57,65 @@ let submit_button2 = document.querySelector('#form2_data')
     let Address2 = document.querySelector('#dee_Address22').value;
     let countryName = document.querySelector('#dee_country2').value;
     let city = document.querySelector('#dee_city2').value;
-    let state = document.querySelector('#dee_state').value;
-    let Zipcode = document.querySelector('#dee_ZIP').value;
+    let state = document.querySelector('#dee_state2').value;
+    let Zipcode = document.querySelector('#dee_ZIP2').value;
     let Phone = document.querySelector('#dee_Phone2').value;
-    if(email&&firstName&&Address1&&Address2&&countryName&&Phone&&lastName&&company&&taxId&&state&&Zipcode){
+    console.log(email,firstName,Address1,Address2,countryName,Phone,lastName,city,company,taxId,state,Zipcode);
+   
+    if(email&&firstName&&Address1&&Address2&&countryName&&Phone&&lastName&&state&&city){
         let shipping_data ={
-            'Email':email,
-            'FirstName ':firstName,
-            'Address_1':Address1,
-            'Address_2':Address2,
-            'Country':countryName,
-            'City':city,
-            'PhoneNO':Phone
+            'email':email,
+            'firstname ':firstName,
+            'address_1':Address1,
+            'address_2':Address2,
+            'country':countryName,
+            'city':city,
+            'phoneno':Phone
         } 
-        // ServerData(shipping_data);
+        console.log(shipping_data)
+        ServerData(shipping_data);
         lsdata2.push(shipping_data);
         localStorage.setItem('shippingAddress2',JSON.stringify(lsdata2));
         console.log(shipping_data);
     }else{
-        console.log('aghhayme ')
-        alert('Please Fill the Required details');
+        // console.log('aghhayme ')
+        // alert('Please Fill the Required details');
     }
+    let shipping_data ={
+        'email':email,
+        'firstname ':firstName,
+        'address_1':Address1,
+        'address_2':Address2,
+        'country':countryName,
+        'city':city,
+        'phoneno':Phone
+    } 
+    console.log(shipping_data)
+    ServerData(shipping_data);
  })
 
 
-//  let ServerData = async(shipping_data)=>{
-//          try {
-//             let res = await fetch('url',{
-//                 method: "POST",
-//                 headers: {
-//                     "Content-Type" : "application/json"
-//                 },
-//                 body : JSON.stringify(shipping_data)
-//             });
+// for the server Usage----------------------------------------
+  async function ServerData(shipping_data){
+    console.log(shipping_data);
+
+    try {
+            let res = await fetch('http://localhost:3000/api/shippingaddress',{
+                method: "POST",
+                headers: {
+                    "Content-Type" : "application/json"
+                },
+                body : JSON.stringify(shipping_data)
+            });
             
             
-//          } catch (error) {
-//             alert('Bad Request')
-//          }
-//  }
+         } catch (error) {
+            alert('Bad Request')
+         }
+ }
+// // ----------------------------------------------------------
+// import { footer } from "./footer.js";
+
+// let deepak_footer = document.querySelector('#faizan_footer');
+// console.log(footer);
+// deepak_footer.innerHTML = footer();
