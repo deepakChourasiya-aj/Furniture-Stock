@@ -7,9 +7,7 @@
 body{
     background-color: #FEFCFF;
 }
-nav{
-    background-color: red;
-}
+
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #000000 !important;
 }

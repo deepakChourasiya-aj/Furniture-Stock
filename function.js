@@ -17,13 +17,15 @@ export  function navbar(){
 <div class="icondiv">
 
             <a href="/register-login.html"><i class="fa fa-thin fa-user"></i></a>
-            <a href=""><i class="fa fa-light fa-heart"></i></a>
-            <a href=""><i class="fa fa-thin fa-cart-shopping"></i></a>
+            <a href="/cart.html"><i class="fa fa-light fa-heart"></i></a>
+            <a href="/cart.html"><i class="fa fa-thin fa-cart-shopping"></i></a>
 
 
 </div>
 
-<button id="checkbtn">Chekout</button>
+<a href="/dee_Billing_Address.html"><button  id="checkbtn">Chekout</button>
+</a>
+
 </section>
 
 <!-- bottom -->
@@ -42,20 +44,20 @@ export  function navbar(){
 
     </div>
 
-
+ 
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right anime">
-            <li><a id="furn" href="#">Furniture</a></li>
-            <li><a id="rugs" href="#">Rugs</a></li>
-            <li><a id="deco" href="#">Decor</a></li>
-            <li><a id="bed" href="#">Bedding</a></li>
-            <li><a id="efhome" href="#">Home Important</a></li>
-            <li><a id="kithome" href="#">Kitchen</a></li>
-            <li><a id="outpros" href="#">Outdoor</a></li>
-            <li><a href="#">Lighting</a></li>
-            <li><a href="#">Gifts</a></li>
-            <li><a id="holi" href="#">Holiday</a></li>
-            <li><a id="sels" href="#">Sales & Deals</a></li>
+            <li><a id="furn" href="./hove.html">Furniture</a></li>
+            <li><a id="rugs" href="./hove.html">Rugs</a></li>
+            <li><a id="deco" href="./hove.html">Decor</a></li>
+            <li><a id="bed" href="./hove.html">Bedding</a></li>
+            <li><a id="efhome" href="./hove.html">Home Important</a></li>
+            <li><a id="kithome" href="./hove.html">Kitchen</a></li>
+            <li><a id="outpros" href="./hove.html">Outdoor</a></li>
+            <li><a href="./hove.html">Lighting</a></li>
+            <li><a href="./hove.html">Gifts</a></li>
+            <li><a id="holi" href="./hove.html">Holiday</a></li>
+            <li><a id="sels" href="./hove.html">Sales & Deals</a></li>
             
         </ul>
 
@@ -64,6 +66,8 @@ export  function navbar(){
 </nav>
     
     `
+    // <a href="./hove.html"></a>
 
 }
+
 
