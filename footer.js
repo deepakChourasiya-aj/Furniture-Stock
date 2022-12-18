@@ -92,9 +92,3 @@ export  function footer(){
 
 }
 
-
-import { navbar } from "./function.js";
-let navbartag = document.querySelector('#togsnav')
-
-console.log(navbar)
-// navbartag.innerHTML= navbar();

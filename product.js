@@ -1,4 +1,13 @@
 import { data ,data1 } from "./data.js";
+import { footer } from "./footer.js";
+
+import {navbar} from "./function.js";
+let second_navbar = document.querySelector("#navbar_form_pranv");
+second_navbar.innerHTML=navbar();
+
+
+let footer_new = document.getElementById("footer");
+footer_new.innerHTML=footer();
 
 function renderdata(data1){
     let container = document.getElementById("procard");
@@ -47,8 +56,8 @@ function produtrender(data){
        price.innerText=`Sale INR:-`+" "+"₹"+" "+el.price;
     
 
-       let star = document.createElement("diV");
-       star.innerText=el.star;
+    //    let star = document.createElement("diV");
+    //    star.innerText=el.star;
 
        let dec = document.createElement("h3");
        dec.innerText=el.item.substring(0,70)+"...";
@@ -72,13 +81,13 @@ function produtrender(data){
        btn_div2.append(addcart);
        btn_div3.append(display);
        btn_div1.append(btn_div2,btn_div3)
-       div.append(pi,dec,price,star,btn_div1,);
+       div.append(pi,dec,price,btn_div1,);
        cont.append(div);
        side.append(cont)
     })
 
 }
- produtrender(data);
+//  produtrender(data);
 
 function displayData(el){
     
@@ -168,14 +177,53 @@ function filterByRating(data,rating_value){
     })
 }
 
+let what ="http://localhost:3000/api/products"
+async function dekho(){
+    try {
+        let res = await fetch(what,{
+            method:"GET",
+            headers:{
+                "Content-Type":"application/json"
+            }   
+        })
 
-
-function addtocart(el){
- 
-  let product_arr = JSON.parse(localStorage.getItem("cart_product")) || [];
-  product_arr.push(el);
-  localStorage.setItem("cart_product",JSON.stringify(product_arr));
-  alert("produt addded to cart")
-  
+        let data= await res.json();
+        // console.log(data);
+        produtrender(data);
+        
+    } catch (error) {
+        console.log("Soeme thing is wrong make it correct");
+    }
 }
 
+dekho();
+
+let yourcart ="http://localhost:3000/api/cartproducts"
+async function addtocart(el){
+ 
+    // console.log(el);
+    //   let product_arr = JSON.parse(localStorage.getItem("cart_product")) || [];
+    //   product_arr.push(el);
+    //   localStorage.setItem("cart_product",JSON.stringify(product_arr));
+    //   alert("produt addded to cart")
+         try {
+             await fetch(yourcart,{
+                method:"POST",
+                body:JSON.stringify(el),
+                headers:{
+                    "Content-Type":"application/json"
+                }
+            })
+
+            // let data = await res.json(el);
+            // console.log(data);
+            // produtrender(data);
+         } catch (error) {
+            // console.log(error);
+            alert("Produt Is already in CART")
+        
+         }
+    
+    
+      
+    }

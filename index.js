@@ -147,6 +147,11 @@ let footertag = document.querySelector('.footer-sec')
 
 console.log(footer)
 footertag.innerHTML= footer();
+import { navbar } from "./function.js";
+let navbartag = document.querySelector('#togsnav')
+
+console.log(navbar)
+navbartag.innerHTML= navbar();
 
 // navbar()
 
