@@ -41,7 +41,13 @@ loginForm.addEventListener("submit", async (e)=>{
     let password = document.getElementById("login-password").value
 
     if(email=="admin@furniturestock.com" && password=="admin"){
-        alert("Admin login Sucessful");
+        // swal("Admin login Sucessful");
+        swal({
+            title: "Admin login Sucessful!",
+            text: "You clicked the button!",
+            icon: "success",
+            button: "Aww yiss!",
+          });
         window.location.href = "Admin.html";
         return;
     }
@@ -88,10 +94,15 @@ function userAuth(userData){
         loggedInUser(userDetails);
         // localStorage.setItem("user-logged-in", userLoggedIn);
         window.location.href = "index.html"
-        alert("Login Successful. Happy Shopping!");
+        swal({
+        title: "Login Successful. Happy Shopping!!",
+        text: "You clicked the button!",
+        icon: "success",
+        button: "Aww yiss!",
+         });
       
     } else if(emailCheck&& !passCheck){
-        alert("Wrong Password")
+        swal("Wrong Password!");
     } else {
         alert("It's like you are a new user. Please Create an account before you login.")
     }

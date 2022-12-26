@@ -31,7 +31,7 @@ registerForm.addEventListener("submit", (e)=>{
         localStorage.setItem("users-details", JSON.stringify(usersDetails));
         
     }else{
-        alert("Password is not matching. Please check and try again");
+        swal("Password is not matching. Please check and try again");
     } 
 });
 
@@ -46,7 +46,13 @@ async function addUser(registerdData){
             body: JSON.stringify(registerdData)
         })
         if(res.ok){
-            alert("Account created successfully. You can Login now.");
+            // alert("Account created successfully. You can Login now.");
+            swal({
+                title: "Account created successfully. You can Login now!",
+                text: "You clicked the button!",
+                icon: "success",
+                button: "Aww yiss!",
+              });
         }
     } catch (error) {
         alert("error");
