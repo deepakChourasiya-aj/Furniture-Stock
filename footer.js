@@ -28,10 +28,10 @@ export  function footer(){
         <div class="office-des">
           <p>here are <br> many variations of passages<br>of Lorem Ipsum<br>available</p>
           
-         <a href="#">faizan.md9735@gmail.com</a>
+         <a href="#">furnitureStock@gmail.com</a>
          
           
-          <p class = "num">+91-6201855200</p>
+          <p class = "num">+91-8536956565</p>
         </div>
       </div>
       
@@ -58,7 +58,7 @@ export  function footer(){
       
       <div class="newsletter row">
         <div class="footer-header">
-          <h2>Contect</h2>
+          <h2>Contact</h2>
         </div>
         <div class="newsletter-des">
           <div class="subcribe"><i class="sub-icon ri-mail-check-fill"></i>

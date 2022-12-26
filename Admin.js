@@ -62,10 +62,56 @@ function feedbackPage(){
     }
 }
 
-
+// let item=document.getElementById("name").value
+// let productid=document.getElementById("productid").value
+// let img=document.getElementById("link").value
+// let catogary=document.getElementById("cat").value
+// let rating=document.getElementById("rate").value
+// let price =document.getElementById("price").value
 
 
 
 // jhfgbdfjgkdjbgvdh
+let submit_button = document.querySelector('.btn8');
+    
+submit_button.addEventListener('click',function(){
+    // event.preventDefault();
+    let item=document.getElementById("name").value
+    let img=document.getElementById("link").value
+    let category=document.getElementById("cat").value
+    let rating=document.getElementById("rate").value
+    let price =document.getElementById("price").value
+    console.log(item,img,category,rating,price);
+  let obj = {
+    item,
+    img,
+    category,
+    rating,
+    price
+  }
+  console.log(obj);
+  rederdata(obj);
+});
+
+async function rederdata(obj){
+try {
+    let res = fetch('http://localhost:3000/api/products',{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(obj)
+    })
+        swal({
+            title: "Product Added in Database!",
+            text: "Successully Added the product!",
+            icon: "success",
+            button: "Aww yiss!",
+          })
+} catch (error) {
+    alert('error')
+}
+}
+
 
 

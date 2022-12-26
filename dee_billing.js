@@ -39,7 +39,7 @@ submit_button1.addEventListener('submit',function(event){
         console.log(lsdata);
         localStorage.setItem('BillingAddress',JSON.stringify(lsdata));
     }else{
-        alert('Please Fill the Required details');
+        swal('Please Fill the Required details');
     }
     
 })
