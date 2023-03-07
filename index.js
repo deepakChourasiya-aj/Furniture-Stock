@@ -212,15 +212,6 @@ searhov.addEventListener('focus', function(){
     // })
 
 
-
-
-
-
-
-
-
-
-
 let furn = document.querySelector('#furn')
 let hovef=document.querySelector('#hov_Eff_furn')
 
