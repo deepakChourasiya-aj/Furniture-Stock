@@ -1,6 +1,6 @@
-#Furniture-Stock
-###amiable-place-6800
-=> Furniture Store
+# Furniture-Stock
+
+### amiable-place-6800
 
 Ecommerece for furniture products
 Link :- https://sensational-druid-3f736c.netlify.app/
