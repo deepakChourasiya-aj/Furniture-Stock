@@ -1,4 +1,5 @@
-# amiable-place-6800
+#Furniture-Stock
+###amiable-place-6800
 => Furniture Store
 
 Ecommerece for furniture products
